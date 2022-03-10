@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-09T11:54:52.238Z</updated>
+  <updated>2022-03-10T09:30:37.619Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>qt的简史</title>
+    <link href="https://github.com/2022/03/10/qt-de-jian-shi/"/>
+    <id>https://github.com/2022/03/10/qt-de-jian-shi/</id>
+    <published>2022-03-10T08:09:51.000Z</published>
+    <updated>2022-03-10T09:30:37.619Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-QT&quot;&gt;&lt;a href=&quot;#1-QT&quot; class=&quot;headerlink&quot; title=&quot;1.QT&quot;&gt;&lt;/a&gt;1.QT&lt;/h1&gt;&lt;h2 id=&quot;1-什么是QT：&quot;&gt;&lt;a href=&quot;#1-什么是QT：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="QT" scheme="https://github.com/categories/QT/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>简单的象棋开发</title>
