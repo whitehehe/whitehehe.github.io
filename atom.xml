@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-11T06:44:25.104Z</updated>
+  <updated>2022-03-11T10:17:44.761Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql第二章</title>
+    <link href="https://github.com/2022/03/11/mysql-di-er-zhang/"/>
+    <id>https://github.com/2022/03/11/mysql-di-er-zhang/</id>
+    <published>2022-03-11T10:00:13.000Z</published>
+    <updated>2022-03-11T10:17:44.761Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MySQL简介&quot;&gt;&lt;a href=&quot;#MySQL简介&quot; class=&quot;headerlink&quot; title=&quot;MySQL简介&quot;&gt;&lt;/a&gt;MySQL简介&lt;/h1&gt;&lt;p&gt;MySQL 的历史最早可以追溯到1979年，Monty</summary>
+        
+      
+    
+    
+    
+    <category term="mysql" scheme="https://github.com/categories/mysql/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>mysql第一章</title>

@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql第一章, hehe.blog">
-    <meta name="description" content="数据库系统概述1.什么叫数据:数据是现实社会和电脑之间交互的东西，描述事物的符号记录成数据。
-2.数据库和数据有什么关系呢？顾名思义;数据是数据库的储存的基本单位,我们肯定会想，数据和数字有什么    关系呢除了基本的数字，的确有关系，数字">
+    <meta name="keywords" content="mysql第二章, hehe.blog">
+    <meta name="description" content="MySQL简介MySQL 的历史最早可以追溯到1979年，Monty Widenius用BASIC设计了一个报表工具，过了不久，又将此工具使用C语言重写，移植到UNIX平台，当时只是一个底层的面向报表的存储引擎。
+MySQL历史的由来：19">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>mysql第一章 | hehe.blog</title>
+    <title>mysql第二章 | hehe.blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">mysql第一章</h1>
+                    <h1 class="description center-align post-title">mysql第二章</h1>
                 </div>
             </div>
         </div>
@@ -479,50 +479,25 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="数据库系统概述"><a href="#数据库系统概述" class="headerlink" title="数据库系统概述"></a>数据库系统概述</h1><h2 id="1-什么叫数据"><a href="#1-什么叫数据" class="headerlink" title="1.什么叫数据:"></a>1.什么叫数据:</h2><p>数据是现实社会和电脑之间交互的东西，描述事物的符号记录成数据。</p>
-<h2 id="2-数据库和数据有什么关系呢？"><a href="#2-数据库和数据有什么关系呢？" class="headerlink" title="2.数据库和数据有什么关系呢？"></a>2.数据库和数据有什么关系呢？</h2><p>顾名思义;数据是数据库的储存的基本单位,我们肯定会想，数据和数字有什么    关系呢除了基本的数字，的确有关系，数字本是数据的一种，但是不紧紧是数字是数据，还有比如图书馆的名字、作者什么的都是数据，我们接触到的东西都可以数据化。</p>
-<h2 id="3-什么叫记录呢？"><a href="#3-什么叫记录呢？" class="headerlink" title="3.什么叫记录呢？"></a>3.什么叫记录呢？</h2><p>将信息按照一个对象的属性方式排成一行的属于记录。例如：在日常生活之中，可以这样描述一本书的信息，《C Primer Plus》是人民邮电出版社出版的图书，作者是普拉塔(Prata S.)，定价是89.00，出版日期是2005年2月1日，这样的信息在计算机中就可以使用下面的方式来描述</p>
-<h2 id="如果是多条记录呢？"><a href="#如果是多条记录呢？" class="headerlink" title="如果是多条记录呢？"></a>如果是多条记录呢？</h2><p>现在有多条这种记录，我们那么就可以列成一张表，通过表来管理数据。</p>
-<h2 id="那么你用表统计一列又算什么？"><a href="#那么你用表统计一列又算什么？" class="headerlink" title="那么你用表统计一列又算什么？"></a>那么你用表统计一列又算什么？</h2><p>一列就是一个个属性组成的。而且每一行的数据都成为记录，那么每一列的内容都称为字段。每一列都有自己的数据类型。</p>
-<h2 id="那么我们应该开始介绍数据库了："><a href="#那么我们应该开始介绍数据库了：" class="headerlink" title="那么我们应该开始介绍数据库了："></a>那么我们应该开始介绍数据库了：</h2><p>数据库想都不用想肯定要先记录数据;而且是按照一定格式的。那么它的定义是什么呢？数据库是长期储存在计算机内，有组织、可共享的大量数据的集合。数据库中的数据按照一定的数据模型具有许多的优秀特点的东西。例如：较小的冗余度、数据的独立性完整性和易拓展性,并可以为各种用户共享;所以数据库具有永久储存、有组织和可共享的特点。</p>
-<h2 id="那么我们怎么管理数据库呢？"><a href="#那么我们怎么管理数据库呢？" class="headerlink" title="那么我们怎么管理数据库呢？"></a>那么我们怎么管理数据库呢？</h2><p>没错我们就靠一个数据管理系统;它和操作系统差不多;具有强大的功能:数据操作和事务管理、运营、数据定义等等。</p>
-<h2 id="我们应该把它们联系起来叫啥名字呢？"><a href="#我们应该把它们联系起来叫啥名字呢？" class="headerlink" title="我们应该把它们联系起来叫啥名字呢？"></a>我们应该把它们联系起来叫啥名字呢？</h2><p>这个不用你操心，前面的大佬早帮你起好了，数据库系统;</p>
-<p>呀！这名字我好像在哪听过，没错数据库系统就是软件和硬件的统称。包括计算机和储存设备、数据库观看系统、支持数据库管理系统的操作系统和多种语言。</p>
-<h2 id="哇哦！这么强大的东西它应该有一门专属于自己的语言吧！"><a href="#哇哦！这么强大的东西它应该有一门专属于自己的语言吧！" class="headerlink" title="哇哦！这么强大的东西它应该有一门专属于自己的语言吧！"></a>哇哦！这么强大的东西它应该有一门专属于自己的语言吧！</h2><p>没错数据库有一门通用的语言叫SQl。</p>
-<h2 id="那么它的历史是啥呢？"><a href="#那么它的历史是啥呢？" class="headerlink" title="那么它的历史是啥呢？"></a>那么它的历史是啥呢？</h2><p>SQL其发音为字母 S-Q-L 或 sequel，是 Structure Query Language（结构化查询语言）的缩写，是目前广泛使用的关系数据库标准语言。该语言由 IBM在20世纪70年代开发出来，被作为IBM关系数据库 System R的原型关系语言，实现关系数据库中信息的检索。由于 SQL 简单易学、功能丰富和使用灵活，因此受到众多人的追捧。经过不断的发展、完善和扩充，SOL 被美国国家标准局（ANSI）确定为关系型数据库语言的美国标准，后来又被国际标准化组织（ISO）采纳为关系数据库语言的国际标准。几乎所有的关系型数据库管理系统软件都支持SQL，许多厂商还对SQL基本命令进行了不同程度的扩充。</p>
-<h2 id="组成部分："><a href="#组成部分：" class="headerlink" title="组成部分："></a>组成部分：</h2><ul>
-<li><p>数据操作语言（Data Manipulation Language，DML）</p>
-<blockquote>
-<p>实现对数据的操作，用于检索或修改数据。</p>
-</blockquote>
-</li>
-<li><p>数据定义语言（Data Definition Language，DDL）</p>
-<blockquote>
-<p>用于定义数据的结构，创建、修改或者删除数据库对象。</p>
-</blockquote>
-</li>
-<li><p>数据控制语言（Data Control Language，DCL）</p>
-<blockquote>
-<p>用于控制数据库用户的权限。</p>
-</blockquote>
-</li>
-<li><p>事务控制 （Transaction Control，TCL）</p>
-<blockquote>
-<p>定义了包含事务开始喝结束的相关命令。</p>
-</blockquote>
-</li>
-<li><p>DDL包含的子部分</p>
-<ul>
-<li>完整性约束（integrity constraint ）</li>
-<li>视图定义  (View Definition)</li>
-</ul>
-</li>
-</ul>
-<h2 id="你说它这么强大但是有没有证据？"><a href="#你说它这么强大但是有没有证据？" class="headerlink" title="你说它这么强大但是有没有证据？"></a>你说它这么强大但是有没有证据？</h2><ul>
-<li>SQL 不是某个特定数据库供应商专有的语言。几乎所有重要的数据库管理系统都支持 SQL，<br>所以只要学习了SQL 就能与所有数据库进行交互。</li>
-<li>SQL 简单易学，该语言的语句都是由描述性很强的英语单词组成，而且这些单词的数目不多。</li>
-<li>SQL 高度非过程化，即用SQL进行数据库操作，只需指出”做什么”，无须指明”怎么做”，存取路径的选择和操作的执行由数据库管理系统自动完成。</li>
-</ul>
+                <h1 id="MySQL简介"><a href="#MySQL简介" class="headerlink" title="MySQL简介"></a>MySQL简介</h1><p>MySQL 的历史最早可以追溯到1979年，Monty Widenius用BASIC设计了一个报表工具，过了不久，又将此工具使用C语言重写，移植到UNIX平台，当时只是一个底层的面向报表的存储引擎。</p>
+<h2 id="MySQL历史的由来："><a href="#MySQL历史的由来：" class="headerlink" title="MySQL历史的由来："></a>MySQL历史的由来：</h2><p>1985年，三个瑞典人 David Axmark、Allan Larsson和 Michael Widenius 成立了一家公司，这个公司最初并不是为了开发数据库产品，而是在实现想法的过程中需要一个数据库并希望能够使用开源的产品。但在当时并没有一个合适的选择。因此自己设计了一个利用索引顺序存取数据的方法，也就是ISAM（Indexed Sequential Access Method）存储引擎核心算法的前身。此软件以创始人之一 Michael Widenius 女儿 My 的名字命名。MySQL的 Logo 为海豚标志，如下图所示，海豚代表了速度、动力、精确等 MySQL所拥有的特性。Logo 中海豚名字叫”sakila”，是由来自非洲斯威士兰的开源软件开发者 Ambrose Twebaze 提供的。根据 Ambrose 所说，Sakila来自一种叫 SiSwati 的斯威士兰方言，也是在 Ambrose 的家乡乌干达附近坦桑尼亚的 Arusha 的一个小镇的名字。MySQL 是一款免费开源、小型、关系型数据库管理系统。随着该数据库功能的不断完善、性能的不断提高，可靠性不断增强。</p>
+<p>2000年4月，MySQL对旧的存储引擎进行了整理，命名为 MyISAM。</p>
+<p>2001 年，支持事务处理和行级锁存储引擎 InnoDB 被集成到 MySQL 发行版中，该版本集成了MyISAM与 InnoDB存储引擎，MySQL与InnoDB的正式结合版本是4.0。2004年10月，发布了经典的4.1版本。 2005年10月，发布了里程碑的一个版本，MySQL 5.0，在5.0中加入了游标，存储过程，触发器，视图和事务的支持。在 5.0 之后的版本里，MySQL 明确地表现出迈向高性能数据库的发展步伐。MySOL 公司于2008年1月16号被 SUN公司收购，而在2009 年 SUN 又被 Oracle 收购。MySQL的发展前途一片光明。</p>
+<p>MySQL 虽然是免费的，但与其他商业数据库一样，具有数据库系统的通用性，提供了数据的存取、增加、修改、删除或更加复杂的数据操作。同时 MySQL 是关系型的数据库系统，支持标准的结构化查询语言，同时 MySQL 为客户端提供了不同的程序接口和链接库，如C、C++、Java、PHP 等。目前 MySQL 被广泛地应用在 Internet 上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，因此许多中小型网站为了降低网站总体拥有成本而选择了MySQL 作为网站数据库。</p>
+<h2 id="MySQL下载与安装："><a href="#MySQL下载与安装：" class="headerlink" title="MySQL下载与安装："></a>MySQL下载与安装：</h2><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>1，进入MySQL官网<a target="_blank" rel="noopener" href="https://www.mysql.com/">官网地址</a>，选择Downloads</p>
+<p>2，往下翻，找到<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/">MySQL Community (GPL) Downloads »</a>，点击进入。</p>
+<p>3，选择MySQL Community Server</p>
+<p>4，下载解压版</p>
+<p>5，弹出如下页面，选择不登录直接下载(下载过程可能有点慢)</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>1，下载之后，解压放到一个自己能找到的目录里面。</p>
+<p>2，以管理员身份运行cmd，并切换到mysql的bin目录。</p>
+<p>3，输入<code>mysqld --install</code>安装mysql服务，移除服务的命令是<code>mysqld --remove</code></p>
+<p>4，输入<code>mysqld --initialize --console</code>初始化，记一下初始密码哦~</p>
+<p>5，然后输入<code>net start mysql</code> 启动服务，停止服务命令是<code>net stop mysql</code></p>
+<p>6，最后登录一下mysql -uroot -p，出现如下界面说明已经成功登录啦~</p>
+<p>7，然后自己修改一下密码 <code>set password for 'root'@'localhost'='你的新密码'</code></p>
+<p>8，输入quit可以退出mysql哦</p>
+<p>9，为了方便登录操作MySQL，设置一个环境变量，进入bin目录，然后复制路径，添加到系统环境变量</p>
 
                 
             </div>
@@ -549,7 +524,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/2022/03/11/mysql-di-yi-zhang/">https://github.com/2022/03/11/mysql-di-yi-zhang/</a>
+                    <a href="https://github.com/2022/03/11/mysql-di-er-zhang/">https://github.com/2022/03/11/mysql-di-er-zhang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -758,9 +733,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/03/11/mysql-di-er-zhang/">
                     <div class="card-image">
@@ -778,9 +754,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -793,6 +769,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -803,13 +780,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/10/qt-de-jian-shi/">
+                <a href="/2022/03/11/mysql-di-yi-zhang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="qt的简史">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="mysql第一章">
                         
-                        <span class="card-title">qt的简史</span>
+                        <span class="card-title">mysql第一章</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -820,14 +797,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/QT/" class="post-category">
-                                    QT
+                            <a href="/categories/mysql/" class="post-category">
+                                    mysql
                                 </a>
                             
                             
