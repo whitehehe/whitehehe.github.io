@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>MySQL第三篇</title>
+      <link href="/2022/03/11/mysql-di-san-pian/"/>
+      <url>/2022/03/11/mysql-di-san-pian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MySQL忘记了密码和Navicat的安装"><a href="#MySQL忘记了密码和Navicat的安装" class="headerlink" title="MySQL忘记了密码和Navicat的安装"></a>MySQL忘记了密码和Navicat的安装</h1><p>1.用管理员权限打开cmd，关闭mysql服务；</p><pre class=" language-css"><code class="language-css"> net stop mysql</code></pre><p>2.设置启动mysql服务时跳过权限验证；</p><pre class=" language-css"><code class="language-css"> mysqld --console --skip-grant-tables --shared-memory</code></pre><p>3.重新打开！重新打开！重新打开一个cmd窗口(用管理员权限)，先前的窗口不要关掉，然后输入mysql，如果成功登录，如下图所示：</p><p>4.使用指定的数据库</p><p>在<em>MySQL</em>中就有很多系统自带的数据库,那么在操作数据库之前就必须要确定是哪一个数据库。使用use 命令选择数据库。</p><pre class=" language-css"><code class="language-css">use mysql<span class="token punctuation">;</span></code></pre><p>5.修改密码</p><pre class=" language-css"><code class="language-css">alter user root<span class="token atrule"><span class="token rule">@localhost</span> identified by <span class="token string">'123456'</span><span class="token punctuation">;</span></span></code></pre><p>卧槽，发现报错了，不要慌，关键来了！！</p><ul><li>先更新一下权限 <code>flush privileges;</code></li><li>再执行修改密码命令 <code>alter user root@localhost identified by '123456';</code></li></ul><p>6.退出mysql</p><pre class=" language-css"><code class="language-css">> quit<span class="token punctuation">;</span></code></pre><p>7.关闭所有控制台，重新打开一个，重启mysql服务，并登录。</p><pre class=" language-css"><code class="language-css">> net start mysql>mysql -uroot -p</code></pre><h1 id="安装Navicat-15-for-MySQL"><a href="#安装Navicat-15-for-MySQL" class="headerlink" title="安装Navicat 15 for MySQL"></a>安装Navicat 15 for MySQL</h1><p>**Navicat 15 for MySQL **是一款针对MySQL数据库而开发的第三方MySQL管理工具，该软件可以用于 MySQL 数据库服务器版本 3.21 或以上的和 MariaDB 5.1 或以上。能够同时连接 MySQL 和 MariaDB 数据库，并与 Amazon RDS、Amazon Aurora、Oracle Cloud、Microsoft Azure、阿里云、腾讯云和华为云等云数据库兼容，支持无缝数据迁移、简单的SQL编辑、智能数据库设计、高级安全连接等功能，为数据库管理、开发和维护提供了一款直观而强大的图形界面，是管理和开发 MySQL 或 MariaDB 的理想解决方案。</p><p>1.下载Navicat for MySQL 15**</p><p><a href="https://pan.baidu.com/s/1eFDCYwjv4H90y6u9dRC6xA">网盘下载 提取码 4ixt</a></p><p><strong>2.下载激活工具</strong></p><p><a href="https://pan.baidu.com/s/1j2C3qz3zMQc11YUC04l8BQ">网盘下载 提取码 09az</a></p><p><strong>3.安装Navicat</strong></p><p>按步骤安装即可，安装完毕后先不要打开软件，<font style="color:red">断开网络连接，一定要断开！！！</font></p><p>4.把Navicat Keygen 放到navicat.exe安装目录下</p><p>5.以<strong>管理员身份运行激活工具</strong>，在弹出界面选择Navicat 15版本， Products选择MySQL，Languages选择Simplefied Chinese 点击Patch，如下：</p><p>6.打开Navicat，点击注册</p><p>7.返回到激活工具界面，点击Generate会自动填写注册码到软件输入框</p><p>8.在点击激活按钮，点击手动激活</p><p>9.将请求码复制到激活工具的文本框中，点击Generate激活码会自动填写到Navicat激活码文本框中，点击激活即可。</p><p>10.点击激活，弹出激活成功，over！</p><h1 id="连接到Mysql"><a href="#连接到Mysql" class="headerlink" title="连接到Mysql"></a>连接到Mysql</h1><p>1.在Navicat中新建MySQL连接。</p><p>2.默认端口3306，单击测试连接按钮，连接成功！最后点击确定即可。</p><p>3.双击连接名称，即可看到所有数据库。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> mysql </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>mysql第二章</title>
       <link href="/2022/03/11/mysql-di-er-zhang/"/>
       <url>/2022/03/11/mysql-di-er-zhang/</url>
