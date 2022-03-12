@@ -4,11 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="libevent第一章, hehe.blog">
-    <meta name="description" content="1.libevent 的介绍:libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。2.libevent下载进行解压
+    <meta name="keywords" content="MySQL第四章, hehe.blog">
+    <meta name="description" content="MySQL测试1.文件的导入:数据库sql文件的导入输入source XXX/test.sql
+这样我们可以用脚本文件不用敲这么多的命令行。
+2.查看有多少数据库:show databases;
 
-3.进入源码:
-libevent的下载和安装:源码安装: 可以参考re">
+查看所有的数据库。
+
+3.查看库中的表:s">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +23,7 @@ libevent的下载和安装:源码安装: 可以参考re">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>libevent第一章 | hehe.blog</title>
+    <title>MySQL第四章 | hehe.blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -315,12 +318,12 @@ libevent的下载和安装:源码安装: 可以参考re">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">libevent第一章</h1>
+                    <h1 class="description center-align post-title">MySQL第四章</h1>
                 </div>
             </div>
         </div>
@@ -447,8 +450,8 @@ libevent的下载和安装:源码安装: 可以参考re">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/libevent/" class="post-category">
-                                libevent
+                            <a href="/categories/mysql/" class="post-category">
+                                mysql
                             </a>
                         
                     </div>
@@ -481,23 +484,53 @@ libevent的下载和安装:源码安装: 可以参考re">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-libevent-的介绍"><a href="#1-libevent-的介绍" class="headerlink" title="1.libevent 的介绍:"></a>1.libevent 的介绍:</h2><h2 id="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"><a href="#libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。" class="headerlink" title="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"></a>libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。</h2><h2 id="2-libevent下载进行解压"><a href="#2-libevent下载进行解压" class="headerlink" title="2.libevent下载进行解压"></a>2.libevent下载进行解压</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071472972.png" alt="1647071472972"></p>
-<p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071615717.png" alt="1647071615717"></p>
-<h2 id="3-进入源码"><a href="#3-进入源码" class="headerlink" title="3.进入源码:"></a>3.进入源码:</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071834918.png" alt="1647071834918"></p>
-<h2 id="libevent的下载和安装"><a href="#libevent的下载和安装" class="headerlink" title="libevent的下载和安装:"></a>libevent的下载和安装:</h2><p>源码安装: 可以参考readme。</p>
-<p>或者：./configure 检查安装环境生成makefile。</p>
-<p>再make      生成.o和可执行文件。</p>
-<p>sudo make install 将必要的资源cp 到系统指定的目录。</p>
-<p>进入sample目录，运行一些自带的demo。</p>
-<p>（注意编译库的.c使用必须加-levent选项。)</p>
-<p>库名libevent.so–&gt;/user/local/lib中可查看到。</p>
-<h2 id="这种通信的特性是基于事件的异步通信模型。"><a href="#这种通信的特性是基于事件的异步通信模型。" class="headerlink" title="这种通信的特性是基于事件的异步通信模型。"></a>这种通信的特性是基于事件的异步通信模型。</h2><p>这里可能会遇到一个问题:</p>
-<p>错误：没有这个文件或者目录</p>
-<p>解决办法:</p>
-<p>1.将用户用到的库统一放到一个目录下</p>
-<p>2.向配置文件中，写入库文件所在的目录</p>
-<p>3.更新/etc/ld.so.cache文件</p>
-<p>然后我们就可以和连上的客户端通信了。</p>
+                <h1 id="MySQL测试"><a href="#MySQL测试" class="headerlink" title="MySQL测试"></a>MySQL测试</h1><h2 id="1-文件的导入"><a href="#1-文件的导入" class="headerlink" title="1.文件的导入:"></a>1.文件的导入:</h2><p>数据库sql文件的导入输入source XXX/test.sql</p>
+<p>这样我们可以用脚本文件不用敲这么多的命令行。</p>
+<h2 id="2-查看有多少数据库"><a href="#2-查看有多少数据库" class="headerlink" title="2.查看有多少数据库:"></a>2.查看有多少数据库:</h2><pre class=" language-mysql"><code class="language-mysql">show databases;
+</code></pre>
+<p>查看所有的数据库。</p>
+<p><img src="E:\blog\source_posts\MySQL第四章\1647077479248.png" alt="1647077479248"></p>
+<h2 id="3-查看库中的表"><a href="#3-查看库中的表" class="headerlink" title="3.查看库中的表:"></a>3.查看库中的表:</h2><pre class=" language-mysql"><code class="language-mysql">show tables;
+</code></pre>
+<p>查看数据库下所有的数据表。</p>
+<p><img src="E:\blog\source_posts\MySQL第四章\1647077565609.png" alt="1647077565609"></p>
+<h2 id="4-SQL语句的规范"><a href="#4-SQL语句的规范" class="headerlink" title="4.SQL语句的规范:"></a>4.SQL语句的规范:</h2><p>SQL语句吧区分大小写。但是字符串常量区分大小写，建议命令大写，表名库名小写;</p>
+<p>SQL语句可单行可多行书写，以分号结尾;</p>
+<p>用空格和缩进来提高语句的可读性;</p>
+<p>注释: 有三种形式:</p>
+<p>可#单行好可以“ - -”（- -）里面是有空格的;</p>
+<p>多行注释/* */。</p>
+<pre class=" language-mysql"><code class="language-mysql">SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |        #主要存储了系统中的一些数据库对象信息，比如用户表信息、列信息、权限信息、字符集信息和分区信息等。
+| mysql              |        #MySQL的核心数据库，主要负责存储数据库用户、用户访问权限等 MySQL 自己需要使用的控制和管理信息。
+| performance_schema |        #主要用于收集数据库服务器性能参数。
+| sys                |        #sys 数据库主要提供了一些视图，数据都来自于 performation_schema，主要是让开发者和使用者更方便地查看性能问题。
++--------------------+
+</code></pre>
+<h2 id="5-数据库切换的基本语法是"><a href="#5-数据库切换的基本语法是" class="headerlink" title="5.数据库切换的基本语法是:"></a>5.数据库切换的基本语法是:</h2><pre class=" language-mysql"><code class="language-mysql">USE<dbname>;
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第四章\1647077536053.png" alt="1647077536053"></p>
+<h2 id="6-想查看自己属于哪个数据库"><a href="#6-想查看自己属于哪个数据库" class="headerlink" title="6.想查看自己属于哪个数据库:"></a>6.想查看自己属于哪个数据库:</h2><pre class=" language-mysql"><code class="language-mysql">SELECT DATABASE();
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第四章\1647078850278.png" alt="1647078850278"></p>
+<h2 id="7-如果自己想创建数据库"><a href="#7-如果自己想创建数据库" class="headerlink" title="7.如果自己想创建数据库:"></a>7.如果自己想创建数据库:</h2><pre class=" language-mysql"><code class="language-mysql">CREATE DATABASE <dbname>;
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第四章\1647078436170.png" alt="1647078436170"></p>
+<h2 id="8-如果想删除"><a href="#8-如果想删除" class="headerlink" title="8.如果想删除:"></a>8.如果想删除:</h2><pre class=" language-mysql"><code class="language-mysql">DROP DATABASE <dbbname>;
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第四章\1647081294938.png" alt="1647081294938"></p>
+<p>使用 DROP DATABASE 命令时要<strong>非常谨慎</strong>，在执行该命令后，MySQL 不会给出任何提示确认信息。DROP DATABASE 删除数据库后，数据库中存储的所有数据表和数据也将一同被删除，而且<strong>不能恢复</strong>。</p>
+<h2 id="9-如果想知道表结构"><a href="#9-如果想知道表结构" class="headerlink" title="9.如果想知道表结构:"></a>9.如果想知道表结构:</h2><pre class=" language-mysql"><code class="language-mysql">DESC emp;
+</code></pre>
+<h2 id="10-还有一种创建数据库的方式可以不报错只有警告"><a href="#10-还有一种创建数据库的方式可以不报错只有警告" class="headerlink" title="10.还有一种创建数据库的方式可以不报错只有警告:"></a>10.还有一种创建数据库的方式可以不报错只有警告:</h2><pre class=" language-mysql"><code class="language-mysql">CREATE DATABASE IF NOT EXISTS <dbname>; 
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第四章\1647081819058.png" alt="1647081819058"></p>
+<h2 id="11-还有一种创建数据库的方式可以不报错只有警告"><a href="#11-还有一种创建数据库的方式可以不报错只有警告" class="headerlink" title="11.还有一种创建数据库的方式可以不报错只有警告:"></a>11.还有一种创建数据库的方式可以不报错只有警告:</h2><pre class=" language-mysql"><code class="language-mysql">DROP DATABASE IF EXISTS <dbname>;
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第四章\1647082170570.png" alt="1647082170570"></p>
 
                 
             </div>
@@ -524,7 +557,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/2022/03/12/libevent-di-yi-zhang/">https://github.com/2022/03/12/libevent-di-yi-zhang/</a>
+                    <a href="https://github.com/2022/03/12/mysql-di-si-zhang/">https://github.com/2022/03/12/mysql-di-si-zhang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -733,9 +766,10 @@ libevent的下载和安装:源码安装: 可以参考re">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/03/12/mysql-di-si-zhang/">
                     <div class="card-image">
@@ -753,9 +787,9 @@ libevent的下载和安装:源码安装: 可以参考re">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -768,6 +802,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -778,13 +813,13 @@ libevent的下载和安装:源码安装: 可以参考re">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/11/mysql-di-san-pian/">
+                <a href="/2022/03/12/libevent-di-yi-zhang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="MySQL第三篇">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="libevent第一章">
                         
-                        <span class="card-title">MySQL第三篇</span>
+                        <span class="card-title">libevent第一章</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -795,14 +830,14 @@ libevent的下载和安装:源码安装: 可以参考re">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql/" class="post-category">
-                                    mysql
+                            <a href="/categories/libevent/" class="post-category">
+                                    libevent
                                 </a>
                             
                             
