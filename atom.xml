@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-11T11:38:08.952Z</updated>
+  <updated>2022-03-12T08:16:12.641Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>libevent第一章</title>
+    <link href="https://github.com/2022/03/12/libevent-di-yi-zhang/"/>
+    <id>https://github.com/2022/03/12/libevent-di-yi-zhang/</id>
+    <published>2022-03-12T06:11:02.000Z</published>
+    <updated>2022-03-12T08:16:12.641Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-libevent-的介绍&quot;&gt;&lt;a href=&quot;#1-libevent-的介绍&quot; class=&quot;headerlink&quot; title=&quot;1.libevent 的介绍:&quot;&gt;&lt;/a&gt;1.libevent 的介绍:&lt;/h2&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="libevent" scheme="https://github.com/categories/libevent/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>MySQL第三篇</title>

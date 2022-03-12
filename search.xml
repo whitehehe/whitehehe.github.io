@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>libevent第一章</title>
+      <link href="/2022/03/12/libevent-di-yi-zhang/"/>
+      <url>/2022/03/12/libevent-di-yi-zhang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-libevent-的介绍"><a href="#1-libevent-的介绍" class="headerlink" title="1.libevent 的介绍:"></a>1.libevent 的介绍:</h2><h2 id="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"><a href="#libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。" class="headerlink" title="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"></a>libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。</h2><h2 id="2-libevent下载进行解压"><a href="#2-libevent下载进行解压" class="headerlink" title="2.libevent下载进行解压"></a>2.libevent下载进行解压</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071472972.png" alt="1647071472972"></p><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071615717.png" alt="1647071615717"></p><h2 id="3-进入源码"><a href="#3-进入源码" class="headerlink" title="3.进入源码:"></a>3.进入源码:</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071834918.png" alt="1647071834918"></p><h2 id="libevent的下载和安装"><a href="#libevent的下载和安装" class="headerlink" title="libevent的下载和安装:"></a>libevent的下载和安装:</h2><p>源码安装: 可以参考readme。</p><p>或者：./configure 检查安装环境生成makefile。</p><p>再make      生成.o和可执行文件。</p><p>sudo make install 将必要的资源cp 到系统指定的目录。</p><p>进入sample目录，运行一些自带的demo。</p><p>（注意编译库的.c使用必须加-levent选项。)</p><p>库名libevent.so–&gt;/user/local/lib中可查看到。</p><h2 id="这种通信的特性是基于事件的异步通信模型。"><a href="#这种通信的特性是基于事件的异步通信模型。" class="headerlink" title="这种通信的特性是基于事件的异步通信模型。"></a>这种通信的特性是基于事件的异步通信模型。</h2><p>这里可能会遇到一个问题:</p><p>错误：没有这个文件或者目录</p><p>解决办法:</p><p>1.将用户用到的库统一放到一个目录下</p><p>2.向配置文件中，写入库文件所在的目录</p><p>3.更新/etc/ld.so.cache文件</p><p>然后我们就可以和连上的客户端通信了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> libevent </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MySQL第三篇</title>
       <link href="/2022/03/11/mysql-di-san-pian/"/>
       <url>/2022/03/11/mysql-di-san-pian/</url>
