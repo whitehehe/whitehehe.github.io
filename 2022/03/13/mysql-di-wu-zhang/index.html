@@ -4,11 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="libevent第一章, hehe.blog">
-    <meta name="description" content="1.libevent 的介绍:libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。2.libevent下载进行解压
+    <meta name="keywords" content="MySQL第五章, hehe.blog">
+    <meta name="description" content="MySQL基本查询MySQL 数据库一般使用SELECT语句来查询数据。(我这里是用Navicat演示的并且提前准备好了sql文件)
+1.怎么将sql语句在数据库中运行：左键点击你要用的数据库,然后选择运行sql文件,
 
-3.进入源码:
-libevent的下载和安装:源码安装: 可以参考re">
+点击你要选择的sq">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +20,7 @@ libevent的下载和安装:源码安装: 可以参考re">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>libevent第一章 | hehe.blog</title>
+    <title>MySQL第五章 | hehe.blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -315,12 +315,12 @@ libevent的下载和安装:源码安装: 可以参考re">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">libevent第一章</h1>
+                    <h1 class="description center-align post-title">MySQL第五章</h1>
                 </div>
             </div>
         </div>
@@ -447,8 +447,8 @@ libevent的下载和安装:源码安装: 可以参考re">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/libevent/" class="post-category">
-                                libevent
+                            <a href="/categories/mysql/" class="post-category">
+                                mysql
                             </a>
                         
                     </div>
@@ -460,7 +460,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-12
+                    2022-03-13
                 </div>
                 
 
@@ -481,23 +481,66 @@ libevent的下载和安装:源码安装: 可以参考re">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-libevent-的介绍"><a href="#1-libevent-的介绍" class="headerlink" title="1.libevent 的介绍:"></a>1.libevent 的介绍:</h2><h2 id="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"><a href="#libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。" class="headerlink" title="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"></a>libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。</h2><h2 id="2-libevent下载进行解压"><a href="#2-libevent下载进行解压" class="headerlink" title="2.libevent下载进行解压"></a>2.libevent下载进行解压</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071472972.png" alt="1647071472972"></p>
-<p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071615717.png" alt="1647071615717"></p>
-<h2 id="3-进入源码"><a href="#3-进入源码" class="headerlink" title="3.进入源码:"></a>3.进入源码:</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071834918.png" alt="1647071834918"></p>
-<h2 id="libevent的下载和安装"><a href="#libevent的下载和安装" class="headerlink" title="libevent的下载和安装:"></a>libevent的下载和安装:</h2><p>源码安装: 可以参考readme。</p>
-<p>或者：./configure 检查安装环境生成makefile。</p>
-<p>再make      生成.o和可执行文件。</p>
-<p>sudo make install 将必要的资源cp 到系统指定的目录。</p>
-<p>进入sample目录，运行一些自带的demo。</p>
-<p>（注意编译库的.c使用必须加-levent选项。)</p>
-<p>库名libevent.so–&gt;/user/local/lib中可查看到。</p>
-<h2 id="这种通信的特性是基于事件的异步通信模型。"><a href="#这种通信的特性是基于事件的异步通信模型。" class="headerlink" title="这种通信的特性是基于事件的异步通信模型。"></a>这种通信的特性是基于事件的异步通信模型。</h2><p>这里可能会遇到一个问题:</p>
-<p>错误：没有这个文件或者目录</p>
-<p>解决办法:</p>
-<p>1.将用户用到的库统一放到一个目录下</p>
-<p>2.向配置文件中，写入库文件所在的目录</p>
-<p>3.更新/etc/ld.so.cache文件</p>
-<p>然后我们就可以和连上的客户端通信了。</p>
+                <h1 id="MySQL基本查询"><a href="#MySQL基本查询" class="headerlink" title="MySQL基本查询"></a>MySQL基本查询</h1><h2 id="MySQL-数据库一般使用SELECT语句来查询数据。"><a href="#MySQL-数据库一般使用SELECT语句来查询数据。" class="headerlink" title="MySQL 数据库一般使用SELECT语句来查询数据。"></a>MySQL 数据库一般使用SELECT语句来查询数据。</h2><p>(我这里是用Navicat演示的并且提前准备好了sql文件)</p>
+<h2 id="1-怎么将sql语句在数据库中运行："><a href="#1-怎么将sql语句在数据库中运行：" class="headerlink" title="1.怎么将sql语句在数据库中运行："></a>1.怎么将sql语句在数据库中运行：</h2><p>左键点击你要用的数据库,然后选择运行sql文件,</p>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647164080829.png" alt="1647164080829"></p>
+<p>点击你要选择的sql文件</p>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647164145824.png" alt="1647164145824"></p>
+<p>这里要只有编码格式要相同一般都选择utf-8。</p>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647164205135.png" alt="1647164205135"></p>
+<p>点击开始,然后把数据库刷新一下就可以了。</p>
+<h2 id="2-我们开始做查询工作"><a href="#2-我们开始做查询工作" class="headerlink" title="2.我们开始做查询工作:"></a>2.我们开始做查询工作:</h2><p><strong>1. 查询多个字段</strong></p>
+<p>以下为在MySQL数据库中查询数据通用的 SELECT 语法：</p>
+<pre class=" language-mysql"><code class="language-mysql">SELECT 字段名,字段名... FROM 表名;
+SELECT * FROM 表名;                    #查询所有字段
+</code></pre>
+<ul>
+<li>查询语句中可以使用一个或者多个表，表之间使用逗号(,)分割，并使用WHERE语句来设定查询条件。</li>
+<li>SELECT 命令可以读取一条或者多条记录。</li>
+<li>你可以使用星号（*）来代替其他字段，SELECT语句会返回表的所有字段数据</li>
+</ul>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647164442320.png" alt="1647164442320"></p>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647164453108.png" alt="1647164453108"></p>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647164738374.png" alt="1647164738374"></p>
+<p>记得这里要选中你要运行的代码。</p>
+<h4 id="2-设置别名"><a href="#2-设置别名" class="headerlink" title="2.设置别名"></a>2.设置别名</h4><pre class=" language-mysql"><code class="language-mysql">SELECT 字段1 [AS 别名],字段2 [AS 别名]... FROM 表名;
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647164924733.png" alt="1647164924733"></p>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647164994163.png" alt="1647164994163"></p>
+<h4 id="3-去除重复记录"><a href="#3-去除重复记录" class="headerlink" title="3.去除重复记录"></a>3.去除重复记录</h4><pre class=" language-mysql"><code class="language-mysql">SELECT DISTINCT 字段列表 FROM 表名;
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647165120509.png" alt="1647165120509"></p>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647165129330.png" alt="1647165129330"></p>
+<h4 id="4-它还能进行四则运算查询"><a href="#4-它还能进行四则运算查询" class="headerlink" title="4.它还能进行四则运算查询:"></a>4.它还能进行四则运算查询:</h4><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>加法</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减法</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘法</td>
+</tr>
+<tr>
+<td>/（DIV）</td>
+<td>除法</td>
+</tr>
+<tr>
+<td>%（MOD）</td>
+<td>求余</td>
+</tr>
+</tbody></table>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647165412788.png" alt="1647165412788"></p>
+<p><img src="E:\blog\source_posts\MySQL第五章\1647165423581.png" alt="1647165423581"></p>
 
                 
             </div>
@@ -524,7 +567,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/2022/03/12/libevent-di-yi-zhang/">https://github.com/2022/03/12/libevent-di-yi-zhang/</a>
+                    <a href="https://github.com/2022/03/13/mysql-di-wu-zhang/">https://github.com/2022/03/13/mysql-di-wu-zhang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -733,17 +776,18 @@ libevent的下载和安装:源码安装: 可以参考re">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/03/12/mysql-di-si-zhang/">
+                <a href="/2022/03/13/mysql-di-wu-zhang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="MySQL第四章">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="MySQL第五章">
                         
-                        <span class="card-title">MySQL第四章</span>
+                        <span class="card-title">MySQL第五章</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -753,9 +797,9 @@ libevent的下载和安装:源码安装: 可以参考re">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -768,6 +812,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -778,13 +823,13 @@ libevent的下载和安装:源码安装: 可以参考re">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/11/mysql-di-san-pian/">
+                <a href="/2022/03/13/gei-vs-pei-zhi-qt-huan-jing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="MySQL第三篇">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="给vs配置QT环境">
                         
-                        <span class="card-title">MySQL第三篇</span>
+                        <span class="card-title">给vs配置QT环境</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -795,14 +840,14 @@ libevent的下载和安装:源码安装: 可以参考re">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-13
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql/" class="post-category">
-                                    mysql
+                            <a href="/categories/QT/" class="post-category">
+                                    QT
                                 </a>
                             
                             

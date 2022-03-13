@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-13T08:11:17.257Z</updated>
+  <updated>2022-03-13T09:57:09.671Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL第五章</title>
+    <link href="https://github.com/2022/03/13/mysql-di-wu-zhang/"/>
+    <id>https://github.com/2022/03/13/mysql-di-wu-zhang/</id>
+    <published>2022-03-13T09:00:44.000Z</published>
+    <updated>2022-03-13T09:57:09.671Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MySQL基本查询&quot;&gt;&lt;a href=&quot;#MySQL基本查询&quot; class=&quot;headerlink&quot; title=&quot;MySQL基本查询&quot;&gt;&lt;/a&gt;MySQL基本查询&lt;/h1&gt;&lt;h2 id=&quot;MySQL-数据库一般使用SELECT语句来查询数据。&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="mysql" scheme="https://github.com/categories/mysql/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>给vs配置QT环境</title>

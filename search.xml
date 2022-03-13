@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>MySQL第五章</title>
+      <link href="/2022/03/13/mysql-di-wu-zhang/"/>
+      <url>/2022/03/13/mysql-di-wu-zhang/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MySQL基本查询"><a href="#MySQL基本查询" class="headerlink" title="MySQL基本查询"></a>MySQL基本查询</h1><h2 id="MySQL-数据库一般使用SELECT语句来查询数据。"><a href="#MySQL-数据库一般使用SELECT语句来查询数据。" class="headerlink" title="MySQL 数据库一般使用SELECT语句来查询数据。"></a>MySQL 数据库一般使用SELECT语句来查询数据。</h2><p>(我这里是用Navicat演示的并且提前准备好了sql文件)</p><h2 id="1-怎么将sql语句在数据库中运行："><a href="#1-怎么将sql语句在数据库中运行：" class="headerlink" title="1.怎么将sql语句在数据库中运行："></a>1.怎么将sql语句在数据库中运行：</h2><p>左键点击你要用的数据库,然后选择运行sql文件,</p><p><img src="E:\blog\source_posts\MySQL第五章\1647164080829.png" alt="1647164080829"></p><p>点击你要选择的sql文件</p><p><img src="E:\blog\source_posts\MySQL第五章\1647164145824.png" alt="1647164145824"></p><p>这里要只有编码格式要相同一般都选择utf-8。</p><p><img src="E:\blog\source_posts\MySQL第五章\1647164205135.png" alt="1647164205135"></p><p>点击开始,然后把数据库刷新一下就可以了。</p><h2 id="2-我们开始做查询工作"><a href="#2-我们开始做查询工作" class="headerlink" title="2.我们开始做查询工作:"></a>2.我们开始做查询工作:</h2><p><strong>1. 查询多个字段</strong></p><p>以下为在MySQL数据库中查询数据通用的 SELECT 语法：</p><pre class=" language-mysql"><code class="language-mysql">SELECT 字段名,字段名... FROM 表名;SELECT * FROM 表名;                    #查询所有字段</code></pre><ul><li>查询语句中可以使用一个或者多个表，表之间使用逗号(,)分割，并使用WHERE语句来设定查询条件。</li><li>SELECT 命令可以读取一条或者多条记录。</li><li>你可以使用星号（*）来代替其他字段，SELECT语句会返回表的所有字段数据</li></ul><p><img src="E:\blog\source_posts\MySQL第五章\1647164442320.png" alt="1647164442320"></p><p><img src="E:\blog\source_posts\MySQL第五章\1647164453108.png" alt="1647164453108"></p><p><img src="E:\blog\source_posts\MySQL第五章\1647164738374.png" alt="1647164738374"></p><p>记得这里要选中你要运行的代码。</p><h4 id="2-设置别名"><a href="#2-设置别名" class="headerlink" title="2.设置别名"></a>2.设置别名</h4><pre class=" language-mysql"><code class="language-mysql">SELECT 字段1 [AS 别名],字段2 [AS 别名]... FROM 表名;</code></pre><p><img src="E:\blog\source_posts\MySQL第五章\1647164924733.png" alt="1647164924733"></p><p><img src="E:\blog\source_posts\MySQL第五章\1647164994163.png" alt="1647164994163"></p><h4 id="3-去除重复记录"><a href="#3-去除重复记录" class="headerlink" title="3.去除重复记录"></a>3.去除重复记录</h4><pre class=" language-mysql"><code class="language-mysql">SELECT DISTINCT 字段列表 FROM 表名;</code></pre><p><img src="E:\blog\source_posts\MySQL第五章\1647165120509.png" alt="1647165120509"></p><p><img src="E:\blog\source_posts\MySQL第五章\1647165129330.png" alt="1647165129330"></p><h4 id="4-它还能进行四则运算查询"><a href="#4-它还能进行四则运算查询" class="headerlink" title="4.它还能进行四则运算查询:"></a>4.它还能进行四则运算查询:</h4><table><thead><tr><th>运算符</th><th>描述</th></tr></thead><tbody><tr><td>+</td><td>加法</td></tr><tr><td>-</td><td>减法</td></tr><tr><td>*</td><td>乘法</td></tr><tr><td>/（DIV）</td><td>除法</td></tr><tr><td>%（MOD）</td><td>求余</td></tr></tbody></table><p><img src="E:\blog\source_posts\MySQL第五章\1647165412788.png" alt="1647165412788"></p><p><img src="E:\blog\source_posts\MySQL第五章\1647165423581.png" alt="1647165423581"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> mysql </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>给vs配置QT环境</title>
       <link href="/2022/03/13/gei-vs-pei-zhi-qt-huan-jing/"/>
       <url>/2022/03/13/gei-vs-pei-zhi-qt-huan-jing/</url>
