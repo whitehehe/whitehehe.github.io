@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-12T10:51:46.633Z</updated>
+  <updated>2022-03-13T08:11:17.257Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>给vs配置QT环境</title>
+    <link href="https://github.com/2022/03/13/gei-vs-pei-zhi-qt-huan-jing/"/>
+    <id>https://github.com/2022/03/13/gei-vs-pei-zhi-qt-huan-jing/</id>
+    <published>2022-03-13T07:39:27.000Z</published>
+    <updated>2022-03-13T08:11:17.257Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;给VS配置QT&quot;&gt;&lt;a href=&quot;#给VS配置QT&quot; class=&quot;headerlink&quot; title=&quot;给VS配置QT&quot;&gt;&lt;/a&gt;给VS配置QT&lt;/h1&gt;&lt;h2 id=&quot;1-我们为啥要在vs上写qt程序呢？&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="QT" scheme="https://github.com/categories/QT/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>MySQL第四章</title>
     <link href="https://github.com/2022/03/12/mysql-di-si-zhang/"/>
     <id>https://github.com/2022/03/12/mysql-di-si-zhang/</id>
     <published>2022-03-12T09:14:35.000Z</published>
-    <updated>2022-03-12T10:51:46.633Z</updated>
+    <updated>2022-03-12T11:04:57.858Z</updated>
     
     
       

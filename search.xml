@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>给vs配置QT环境</title>
+      <link href="/2022/03/13/gei-vs-pei-zhi-qt-huan-jing/"/>
+      <url>/2022/03/13/gei-vs-pei-zhi-qt-huan-jing/</url>
+      
+        <content type="html"><![CDATA[<h1 id="给VS配置QT"><a href="#给VS配置QT" class="headerlink" title="给VS配置QT"></a>给VS配置QT</h1><h2 id="1-我们为啥要在vs上写qt程序呢？"><a href="#1-我们为啥要在vs上写qt程序呢？" class="headerlink" title="1.我们为啥要在vs上写qt程序呢？"></a>1.我们为啥要在vs上写qt程序呢？</h2><p>1.VS比QT调试功能强大。</p><p>2.VS作为宇宙最强ide做为程序员习惯用。</p><p>3.VS多方面比qtcreator强大。</p><h2 id="2-怎么配置VS呢？"><a href="#2-怎么配置VS呢？" class="headerlink" title="2.怎么配置VS呢？"></a>2.怎么配置VS呢？</h2><h6 id="1-选择菜单栏-gt-扩展-gt-管理扩展"><a href="#1-选择菜单栏-gt-扩展-gt-管理扩展" class="headerlink" title="1.选择菜单栏->扩展->管理扩展"></a>1.选择菜单栏-&gt;扩展-&gt;管理扩展</h6><p><img src="E:\blog\source_posts\给vs配置QT环境\1647157639981.png" alt="1647157639981"></p><h6 id="2-给VS安装QT的插件"><a href="#2-给VS安装QT的插件" class="headerlink" title="2.给VS安装QT的插件"></a>2.给VS安装QT的插件</h6><p>选择菜单栏的 扩展-&gt;管理扩展，输入Qt搜索，然后下载Qt Visual Studio Tools（下载灰常的银杏，慢的死~还不一定能下载）</p><p><img src="E:\blog\source_posts\给vs配置QT环境\1647157759953.png" alt="1647157759953"></p><p>如果实在不能忍受这龟速，咱们来别的办法**</p><p>先到Qt官网下载对于版本的插件，我这里是Vs2020：</p><p><a href="https://download.qt.io/official_releases/vsaddin/">Qt官网插件下载</a></p><p>[微软拓展商店下载</p><p><img src="E:\blog\source_posts\给vs配置QT环境\1647157924810.png" alt="1647157924810"></p><p>这里有各种版本的，选择你的版本安装。</p><h3 id="3-安装VSIX-即上面下载的那个插件"><a href="#3-安装VSIX-即上面下载的那个插件" class="headerlink" title="3.安装VSIX(即上面下载的那个插件)"></a>3.安装VSIX(即上面下载的那个插件)</h3><p>如果是通过Vs下载的，会自动安装。</p><p>如果是手动下载的，需要双击自己安装。</p><p>打开安装包之后，点击Install等待安装完成即可。</p><p>安装之前，请先关掉Vs<code>没有关掉会出现界面，点击end tasks即可。</code></p><p>关闭Vs之后，一秒安装完成。</p><p>安装完成，关掉程序。<br>       (我以前安装过这里就不再演示了)</p><h2 id="4-设置插件"><a href="#4-设置插件" class="headerlink" title="4.设置插件:"></a>4.设置插件:</h2><p>再次打开vs，拓展-&gt;QT VS Tools -&gt;QT options</p><p><img src="E:\blog\source_posts\给vs配置QT环境\1647158330324.png" alt="1647158330324"></p><p>点击Qt Options之后会弹出如下界面</p><p><img src="E:\blog\source_posts\给vs配置QT环境\1647158480699.png" alt="1647158480699"></p><p>这里要选择你的对应的qt套件:</p><p><img src="E:\blog\source_posts\给vs配置QT环境\1647158731316.png" alt="1647158731316"></p><h3 id="5-VS创建Qt项目"><a href="#5-VS创建Qt项目" class="headerlink" title="5.VS创建Qt项目"></a>5.VS创建Qt项目</h3><p>在Vs中点击新建项目，搜索Qt找到Qt Widgets Application然后点击下一步</p><p><img src="E:\blog\source_posts\给vs配置QT环境\1647158929683.png" alt="1647158929683"></p><p>下一步之后，给项目取名称。</p><p>点击创建，然后点击Next。</p><p><img src="E:\blog\source_posts\给vs配置QT环境\1647158998290.png" alt="1647158998290"></p><p><img src="E:\blog\source_posts\给vs配置QT环境\1647159022243.png" alt="1647159022243"></p><p>（上面的东西比较简单就不在叙述了）然后就可以运行了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> QT </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MySQL第四章</title>
       <link href="/2022/03/12/mysql-di-si-zhang/"/>
       <url>/2022/03/12/mysql-di-si-zhang/</url>
