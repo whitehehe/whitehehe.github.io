@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>c++中的前置和后置++注意事项</title>
+      <link href="/2022/03/15/c-zhong-de-qian-zhi-he-hou-zhi-zhu-yi-shi-xiang/"/>
+      <url>/2022/03/15/c-zhong-de-qian-zhi-he-hou-zhi-zhu-yi-shi-xiang/</url>
+      
+        <content type="html"><![CDATA[<h1 id="c-中的前置和后置加加没你想的这么简单"><a href="#c-中的前置和后置加加没你想的这么简单" class="headerlink" title="c++中的前置和后置加加没你想的这么简单"></a>c++中的前置和后置加加没你想的这么简单</h1><h2 id="1-前置-和后置-的区别1："><a href="#1-前置-和后置-的区别1：" class="headerlink" title="1.前置++和后置++的区别1："></a>1.前置++和后置++的区别1：</h2><p>前置是先加后赋值，后置是先赋值再加。</p><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647326199604.png" alt="1647326199604"></p><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647326216165.png" alt="1647326216165"></p><h2 id="2-前置-比后置-运行的速度快："><a href="#2-前置-比后置-运行的速度快：" class="headerlink" title="2.前置++比后置++运行的速度快："></a>2.前置++比后置++运行的速度快：</h2><h5 id="在汇编底层中后置-会比前置-多一行。"><a href="#在汇编底层中后置-会比前置-多一行。" class="headerlink" title="在汇编底层中后置++会比前置++多一行。"></a>在汇编底层中后置++会比前置++多一行。</h5><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647326486077.png" alt="1647326486077"></p><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647326496232.png" alt="1647326496232"></p><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647326601044.png" alt="1647326601044"></p><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647326610839.png" alt="1647326610839"></p><h4 id="当然我这demo不是很准确毕竟也是有偶然的，但是确实是前置-快"><a href="#当然我这demo不是很准确毕竟也是有偶然的，但是确实是前置-快" class="headerlink" title="当然我这demo不是很准确毕竟也是有偶然的，但是确实是前置++快"></a>当然我这demo不是很准确毕竟也是有偶然的，但是确实是前置++快</h4><h2 id="3-作为学者的我们应该一探究竟。"><a href="#3-作为学者的我们应该一探究竟。" class="headerlink" title="3.作为学者的我们应该一探究竟。"></a>3.作为学者的我们应该一探究竟。</h2><p>其实前置++是不用产生中间变量的。而后置++产生了个中间变量接受了前面的值。</p><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647326840172.png" alt="1647326840172"></p><p>明确表示了左值不能赋值。</p><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647326879387.png" alt="1647326879387"></p><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647326886308.png" alt="1647326886308"></p><h2 id="4-那这样子的话有啥用呢？"><a href="#4-那这样子的话有啥用呢？" class="headerlink" title="4.那这样子的话有啥用呢？"></a>4.那这样子的话有啥用呢？</h2><p>其实没啥大用，但是在重载前置++（–）和后置++（–）应该注意该不该使用引用。明显前置可以使用引用后置则不行。</p><p><img src="E:\blog\source_posts\c-中的前置和后置-注意事项\1647327353666.png" alt="1647327353666"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> c++ </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MySQL第六章</title>
       <link href="/2022/03/13/mysql-di-liu-zhang/"/>
       <url>/2022/03/13/mysql-di-liu-zhang/</url>

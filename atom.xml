@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-15T05:29:35.670Z</updated>
+  <updated>2022-03-15T06:56:20.269Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>c++中的前置和后置++注意事项</title>
+    <link href="https://github.com/2022/03/15/c-zhong-de-qian-zhi-he-hou-zhi-zhu-yi-shi-xiang/"/>
+    <id>https://github.com/2022/03/15/c-zhong-de-qian-zhi-he-hou-zhi-zhu-yi-shi-xiang/</id>
+    <published>2022-03-15T06:20:21.000Z</published>
+    <updated>2022-03-15T06:56:20.269Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;c-中的前置和后置加加没你想的这么简单&quot;&gt;&lt;a href=&quot;#c-中的前置和后置加加没你想的这么简单&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="c++" scheme="https://github.com/categories/c/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>MySQL第六章</title>
