@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-15T06:56:20.269Z</updated>
+  <updated>2022-03-17T08:48:25.833Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>敏捷开发流程</title>
+    <link href="https://github.com/2022/03/16/min-jie-kai-fa-liu-cheng/"/>
+    <id>https://github.com/2022/03/16/min-jie-kai-fa-liu-cheng/</id>
+    <published>2022-03-16T14:56:29.000Z</published>
+    <updated>2022-03-17T08:48:25.833Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一篇小文章了解企业的敏捷开发流程&quot;&gt;&lt;a href=&quot;#一篇小文章了解企业的敏捷开发流程&quot; class=&quot;headerlink&quot; title=&quot;一篇小文章了解企业的敏捷开发流程&quot;&gt;&lt;/a&gt;一篇小文章了解企业的敏捷开发流程&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="敏捷开发流程" scheme="https://github.com/categories/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>c++中的前置和后置++注意事项</title>
