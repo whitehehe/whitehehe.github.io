@@ -4,11 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="libevent第一章, hehe.blog">
-    <meta name="description" content="1.libevent 的介绍:libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。2.libevent下载进行解压
-
-3.进入源码:
-libevent的下载和安装:源码安装: 可以参考re">
+    <meta name="keywords" content="MySQL第七章, hehe.blog">
+    <meta name="description" content="MySQL函数什么叫函数呢：MySQL 函数会对传递进来的参数进行一系列的处理，并且返回一个结果，这就是函数的定义了。
+MySQL包含了大量的函数并且丰富多彩，我们就来了解一下那几十个常用的，剩下的可以去「MySQL 参考手册」查询。
+字符">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@ libevent的下载和安装:源码安装: 可以参考re">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>libevent第一章 | hehe.blog</title>
+    <title>MySQL第七章 | hehe.blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -315,12 +314,12 @@ libevent的下载和安装:源码安装: 可以参考re">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">libevent第一章</h1>
+                    <h1 class="description center-align post-title">MySQL第七章</h1>
                 </div>
             </div>
         </div>
@@ -447,8 +446,8 @@ libevent的下载和安装:源码安装: 可以参考re">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/libevent/" class="post-category">
-                                libevent
+                            <a href="/categories/mysql/" class="post-category">
+                                mysql
                             </a>
                         
                     </div>
@@ -460,7 +459,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-12
+                    2022-03-18
                 </div>
                 
 
@@ -481,23 +480,353 @@ libevent的下载和安装:源码安装: 可以参考re">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-libevent-的介绍"><a href="#1-libevent-的介绍" class="headerlink" title="1.libevent 的介绍:"></a>1.libevent 的介绍:</h2><h2 id="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"><a href="#libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。" class="headerlink" title="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"></a>libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。</h2><h2 id="2-libevent下载进行解压"><a href="#2-libevent下载进行解压" class="headerlink" title="2.libevent下载进行解压"></a>2.libevent下载进行解压</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071472972.png" alt="1647071472972"></p>
-<p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071615717.png" alt="1647071615717"></p>
-<h2 id="3-进入源码"><a href="#3-进入源码" class="headerlink" title="3.进入源码:"></a>3.进入源码:</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071834918.png" alt="1647071834918"></p>
-<h2 id="libevent的下载和安装"><a href="#libevent的下载和安装" class="headerlink" title="libevent的下载和安装:"></a>libevent的下载和安装:</h2><p>源码安装: 可以参考readme。</p>
-<p>或者：./configure 检查安装环境生成makefile。</p>
-<p>再make      生成.o和可执行文件。</p>
-<p>sudo make install 将必要的资源cp 到系统指定的目录。</p>
-<p>进入sample目录，运行一些自带的demo。</p>
-<p>（注意编译库的.c使用必须加-levent选项。)</p>
-<p>库名libevent.so–&gt;/user/local/lib中可查看到。</p>
-<h2 id="这种通信的特性是基于事件的异步通信模型。"><a href="#这种通信的特性是基于事件的异步通信模型。" class="headerlink" title="这种通信的特性是基于事件的异步通信模型。"></a>这种通信的特性是基于事件的异步通信模型。</h2><p>这里可能会遇到一个问题:</p>
-<p>错误：没有这个文件或者目录</p>
-<p>解决办法:</p>
-<p>1.将用户用到的库统一放到一个目录下</p>
-<p>2.向配置文件中，写入库文件所在的目录</p>
-<p>3.更新/etc/ld.so.cache文件</p>
-<p>然后我们就可以和连上的客户端通信了。</p>
+                <h1 id="MySQL函数"><a href="#MySQL函数" class="headerlink" title="MySQL函数"></a>MySQL函数</h1><h2 id="什么叫函数呢："><a href="#什么叫函数呢：" class="headerlink" title="什么叫函数呢："></a>什么叫函数呢：</h2><p>MySQL 函数会对传递进来的参数进行一系列的处理，并且返回一个结果，这就是函数的定义了。</p>
+<p>MySQL包含了大量的函数并且丰富多彩，我们就来了解一下那几十个常用的，剩下的可以去「<a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/functions.html">MySQL 参考手册</a>」查询。</p>
+<h2 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UPPER(列|字符串)</td>
+<td>将字符串每个字符转为大写</td>
+</tr>
+<tr>
+<td>LOWER(列|字符串)</td>
+<td>将字符串每个字符转为小写</td>
+</tr>
+<tr>
+<td>CONCAT(str1,str2,…)</td>
+<td>将所有字符串连接成一个字符串</td>
+</tr>
+<tr>
+<td>REPLACE(列|字符串,新字符串)</td>
+<td>使用新字符串替换旧字符串</td>
+</tr>
+<tr>
+<td>LENGTH(列|字符串)</td>
+<td>求字符串长度</td>
+</tr>
+<tr>
+<td>SUBSTR(列|字符串,开始点[,长度])</td>
+<td>字符串截取</td>
+</tr>
+<tr>
+<td>LEFT(str,len)</td>
+<td>获取字符串左边len个字符组成的字符串</td>
+</tr>
+<tr>
+<td>RIGHT(str,len)</td>
+<td>获取字符串右边len个字符组成的字符串</td>
+</tr>
+<tr>
+<td>MID(str,pos,len)</td>
+<td>获取字符串中从pos(第几个)位置开始，长度为len的字符串</td>
+</tr>
+<tr>
+<td>ASCII(字符)</td>
+<td>返回与指定字符对应的十进制整数</td>
+</tr>
+<tr>
+<td>CHR(数字)</td>
+<td>返回与整数对应的字符</td>
+</tr>
+<tr>
+<td>RPAD(列|字符串,长度,填充字符)<br>LPAD(列|字符串,长度,填充字符)</td>
+<td>用指定的字符在字符串右或左填充</td>
+</tr>
+<tr>
+<td>LTRIM(字符串)、RTRIM(字符串)</td>
+<td>去掉字符串左或右的空格</td>
+</tr>
+<tr>
+<td>TRIM(列|字符串)</td>
+<td>去掉字符串左右空格</td>
+</tr>
+<tr>
+<td>INSTR(列|字符串,要查找的字符串,开始位置,出现位置)</td>
+<td>查找一个子字符串是否在指定的位置上出现</td>
+</tr>
+</tbody></table>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647583819068.png" alt="1647583819068"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647583827231.png" alt="1647583827231"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647584931122.png" alt="1647584931122"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647584939724.png" alt="1647584939724"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647585184084.png" alt="1647585184084"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647585192781.png" alt="1647585192781"></p>
+<h2 id="这里就不一样演示了。"><a href="#这里就不一样演示了。" class="headerlink" title="这里就不一样演示了。"></a>这里就不一样演示了。</h2><h2 id="数学函数"><a href="#数学函数" class="headerlink" title="数学函数"></a>数学函数</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ROUND(数字[,保留位数])</td>
+<td>根据指定的保留位数对小数进行四舍五入，如果不指定保留位数，则小数点之后的数字全部进行全部四舍五入</td>
+</tr>
+<tr>
+<td>TRUNCATE(数字[,截取位数])</td>
+<td>保留指定位数的小数，如果不指定，则表示不保留</td>
+</tr>
+<tr>
+<td>CEIL(数字)，CEILING(数字)</td>
+<td>对小数向上取整</td>
+</tr>
+<tr>
+<td>FLOOR(数字)</td>
+<td>对小数向下取整</td>
+</tr>
+<tr>
+<td>RAND([n])</td>
+<td>随机返回0到1.0之间的小数，如果指定n每次产生的就都是重复的</td>
+</tr>
+</tbody></table>
+<p>通过数据库的函数，生成一个六位数字的随机验证码。</p>
+<pre class=" language-mysql"><code class="language-mysql">SELECT LPAD(TRUNCATE(RAND()*1000000,0),6,'0');
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647599540707.png" alt="1647599540707"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647599547748.png" alt="1647599547748"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647599597072.png" alt="1647599597072"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647599603179.png" alt="1647599603179"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647599766387.png" alt="1647599766387"></p>
+<h3 id="这里就不一样演示了。-1"><a href="#这里就不一样演示了。-1" class="headerlink" title="这里就不一样演示了。"></a>这里就不一样演示了。</h3><h2 id="日期和时间函数"><a href="#日期和时间函数" class="headerlink" title="日期和时间函数"></a>日期和时间函数</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CURDATE()，CURRENT_DATE()</td>
+<td>返回当前日期</td>
+</tr>
+<tr>
+<td>CURTIME()，CURRENT_TIME()</td>
+<td>返回当前时间</td>
+</tr>
+<tr>
+<td>NOW()，CURRENT_TIMESTAMP()，LOCALTIME()，<br>SYSDATE()，LOCALTIMESTAMP()</td>
+<td>返回会当前日期和事件</td>
+</tr>
+<tr>
+<td>YEAR(日期)</td>
+<td>返回日期中的年份</td>
+</tr>
+<tr>
+<td>MONTH(日期)</td>
+<td>返回日期中的月份[1,12]</td>
+</tr>
+<tr>
+<td>DAY(日期)</td>
+<td>返回日期中的天[1,31]</td>
+</tr>
+<tr>
+<td>HOUR(时间)</td>
+<td>返回时间中的小时</td>
+</tr>
+<tr>
+<td>MINUTE(时间)</td>
+<td>返回实践中的分钟</td>
+</tr>
+<tr>
+<td>SECOND(时间)</td>
+<td>返回时间中的秒</td>
+</tr>
+<tr>
+<td>DAYOFWEEK(日期)</td>
+<td>返回星期几，1星期日，2星期一</td>
+</tr>
+<tr>
+<td>WEEKDAY(日期)</td>
+<td>返回星期几，0星期一，1星期二</td>
+</tr>
+<tr>
+<td>DAYOFYEAR(日期)</td>
+<td>计算指定日期是本年第几天</td>
+</tr>
+<tr>
+<td>DAYOFMONTH(日期)</td>
+<td>计算指定日期是本月第几天</td>
+</tr>
+<tr>
+<td>QUARTER(日期)</td>
+<td>计算指定日期是第几季度</td>
+</tr>
+<tr>
+<td>TIME_TO_SEC(time)</td>
+<td>将指定时间转换为秒</td>
+</tr>
+<tr>
+<td>SEC_TO_TIME(sec)</td>
+<td>将以秒为单位的时间转换为时分秒的格式</td>
+</tr>
+<tr>
+<td>DATEDIFF(d1,d2)</td>
+<td>计算两个日期相隔的天数</td>
+</tr>
+<tr>
+<td>ADDDATE(date,n)</td>
+<td>计算指定日期加上n天后的日期</td>
+</tr>
+<tr>
+<td>SUBDATE(date,n)</td>
+<td>计算指定日期减去n天后的日期</td>
+</tr>
+<tr>
+<td>ADDTIME(time,n)</td>
+<td>计算指定时间加上n秒后的时间</td>
+</tr>
+<tr>
+<td>SUBTIME(time,n)</td>
+<td>计算指定时间减去n秒后的时间</td>
+</tr>
+<tr>
+<td>DATE_FORMAT(date,f)</td>
+<td>按格式返回日期</td>
+</tr>
+<tr>
+<td>TIME_FORMAT(time,f)</td>
+<td>按格式返回时间</td>
+</tr>
+</tbody></table>
+<h2 id="条件判断函数"><a href="#条件判断函数" class="headerlink" title="条件判断函数"></a>条件判断函数</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IF(expr,v1,v2)</td>
+<td>如果表达式expr成立，返回结果v1；否则，返回结果v2。</td>
+</tr>
+<tr>
+<td>IFNULL(v1,v2)</td>
+<td>如果v1的值不为NULL，则返回v1，否则返回v2</td>
+</tr>
+<tr>
+<td>CASE</td>
+<td>分支(详见下面)</td>
+</tr>
+</tbody></table>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647602564844.png" alt="1647602564844"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647602571566.png" alt="1647602571566"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647602933349.png" alt="1647602933349"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647602940594.png" alt="1647602940594"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647603076764.png" alt="1647603076764"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647603084553.png" alt="1647603084553"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647603265964.png" alt="1647603265964"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647604256409.png" alt="1647604256409"></p>
+<h2 id="系统信息函数"><a href="#系统信息函数" class="headerlink" title="系统信息函数"></a>系统信息函数</h2><blockquote>
+<p>系统信息函数用来查询MySQL数据库的系统信息。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>VERSION()</td>
+<td>返回数据库的版本号</td>
+</tr>
+<tr>
+<td>CONNECTION_ID()</td>
+<td>返回服务器的连接数</td>
+</tr>
+<tr>
+<td>DATABASE()、SCHEMA</td>
+<td>返回当前数据库名</td>
+</tr>
+<tr>
+<td>USER()、SYSTEM_USER()、SESSION_USER()、CURRENT_USER()、CURRENT_USER</td>
+<td>返回当前用户</td>
+</tr>
+<tr>
+<td>CHARSET(str)</td>
+<td>返回字符串str的字符集</td>
+</tr>
+<tr>
+<td>COLLATION(str)</td>
+<td>返回字符串str的字符排列方式</td>
+</tr>
+</tbody></table>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647604442801.png" alt="1647604442801"></p>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647604551212.png" alt="1647604551212"></p>
+<h2 id="加密函数"><a href="#加密函数" class="headerlink" title="加密函数"></a>加密函数</h2><blockquote>
+<p>加密函数是MySQL用来对数据进行加密的函数.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MD5(str)</td>
+<td>对字符串str进行散列，可以用于一些普通的不需要解密的数据加密，如密码</td>
+</tr>
+<tr>
+<td>sha1</td>
+<td>对字符串str进行散列，可以用于一些普通的不需要解密的数据加密，如密码，比MD5更安全</td>
+</tr>
+</tbody></table>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647604692982.png" alt="1647604692982"></p>
+<h2 id="其他函数"><a href="#其他函数" class="headerlink" title="其他函数"></a>其他函数</h2><h3 id="1-进制转换"><a href="#1-进制转换" class="headerlink" title="1.进制转换"></a>1.进制转换</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BIN(x)</td>
+<td>返回x的二进制</td>
+</tr>
+<tr>
+<td>HEX(x)</td>
+<td>返回x的十六进制</td>
+</tr>
+<tr>
+<td>OCT(x)</td>
+<td>返回x的八进制</td>
+</tr>
+<tr>
+<td>CONV(x,from_base,to_base)</td>
+<td>将from_base进制的x，转成to_base进制</td>
+</tr>
+</tbody></table>
+<pre class=" language-mysql"><code class="language-mysql">SELECT BIN(10),HEX(10),OCT(10),CONV(16,16,10);
+->1010 A 12 22
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647604747963.png" alt="1647604747963"></p>
+<h3 id="2-IP地址转换"><a href="#2-IP地址转换" class="headerlink" title="2.IP地址转换"></a>2.IP地址转换</h3><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>INET_ATON(IP)</td>
+<td>将点分十进制的IP地址转为数字</td>
+</tr>
+<tr>
+<td>INET_NTOA(number)</td>
+<td>将数字形式的IP转为点分十进制</td>
+</tr>
+</tbody></table>
+<pre class=" language-mysql"><code class="language-mysql">SELECT INET_ATON('192.168.0.1')
+    ->3232235521
+SELECT INET_NTOA(3232235521)
+    ->192.168.0.1
+</code></pre>
+<p><img src="E:\blog\source_posts\MySQL第七章\1647604858498.png" alt="1647604858498"></p>
 
                 
             </div>
@@ -524,7 +853,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/2022/03/12/libevent-di-yi-zhang/">https://github.com/2022/03/12/libevent-di-yi-zhang/</a>
+                    <a href="https://github.com/2022/03/18/mysql-di-qi-zhang/">https://github.com/2022/03/18/mysql-di-qi-zhang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -733,17 +1062,18 @@ libevent的下载和安装:源码安装: 可以参考re">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/03/12/mysql-di-si-zhang/">
+                <a href="/2022/03/18/mysql-di-qi-zhang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="MySQL第四章">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="MySQL第七章">
                         
-                        <span class="card-title">MySQL第四章</span>
+                        <span class="card-title">MySQL第七章</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -753,9 +1083,9 @@ libevent的下载和安装:源码安装: 可以参考re">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -768,6 +1098,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -778,13 +1109,13 @@ libevent的下载和安装:源码安装: 可以参考re">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/11/mysql-di-san-pian/">
+                <a href="/2022/03/16/min-jie-kai-fa-liu-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="MySQL第三篇">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="敏捷开发流程">
                         
-                        <span class="card-title">MySQL第三篇</span>
+                        <span class="card-title">敏捷开发流程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -795,14 +1126,14 @@ libevent的下载和安装:源码安装: 可以参考re">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql/" class="post-category">
-                                    mysql
+                            <a href="/categories/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B/" class="post-category">
+                                    敏捷开发流程
                                 </a>
                             
                             
