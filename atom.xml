@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-18T12:04:47.305Z</updated>
+  <updated>2022-03-19T11:40:27.191Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux动态库找不到的解决方法</title>
+    <link href="https://github.com/2022/03/19/linux-dong-tai-ku-zhao-bu-dao-de-jie-jue-fang-fa/"/>
+    <id>https://github.com/2022/03/19/linux-dong-tai-ku-zhao-bu-dao-de-jie-jue-fang-fa/</id>
+    <published>2022-03-19T11:09:03.000Z</published>
+    <updated>2022-03-19T11:40:27.191Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Linux-动态库找不到的解决办法&quot;&gt;&lt;a href=&quot;#Linux-动态库找不到的解决办法&quot; class=&quot;headerlink&quot; title=&quot;Linux 动态库找不到的解决办法&quot;&gt;&lt;/a&gt;Linux 动态库找不到的解决办法&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="c++" scheme="https://github.com/categories/c/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>MySQL第七章</title>
