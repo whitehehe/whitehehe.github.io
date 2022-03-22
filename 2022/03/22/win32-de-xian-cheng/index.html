@@ -4,11 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="libevent第一章, hehe.blog">
-    <meta name="description" content="1.libevent 的介绍:libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。2.libevent下载进行解压
-
-3.进入源码:
-libevent的下载和安装:源码安装: 可以参考re">
+    <meta name="keywords" content="win32的线程, hehe.blog">
+    <meta name="description" content="Win32线程线程的创建函数：HANDLE CreateThread(
+    LPSECURITY_ATTRIBUTES lpThreadAttributes,//线程结构体地址  用来继承
+    SIZE_T dwStackSize,">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +19,7 @@ libevent的下载和安装:源码安装: 可以参考re">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>libevent第一章 | hehe.blog</title>
+    <title>win32的线程 | hehe.blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -315,12 +314,12 @@ libevent的下载和安装:源码安装: 可以参考re">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">libevent第一章</h1>
+                    <h1 class="description center-align post-title">win32的线程</h1>
                 </div>
             </div>
         </div>
@@ -460,7 +459,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-12
+                    2022-03-22
                 </div>
                 
 
@@ -481,24 +480,129 @@ libevent的下载和安装:源码安装: 可以参考re">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-libevent-的介绍"><a href="#1-libevent-的介绍" class="headerlink" title="1.libevent 的介绍:"></a>1.libevent 的介绍:</h2><h2 id="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"><a href="#libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。" class="headerlink" title="libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。"></a>libevet库具有跨平台的专注网络开发的库，而且开源（Windows，Linux，unix）的可使用。</h2><h2 id="2-libevent下载进行解压"><a href="#2-libevent下载进行解压" class="headerlink" title="2.libevent下载进行解压"></a>2.libevent下载进行解压</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071472972.png" alt="1647071472972"></p>
-<p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071615717.png" alt="1647071615717"></p>
-<h2 id="3-进入源码"><a href="#3-进入源码" class="headerlink" title="3.进入源码:"></a>3.进入源码:</h2><p><img src="C:\Users\虎牙、\AppData\Roaming\Typora\typora-user-images\1647071834918.png" alt="1647071834918"></p>
-<h2 id="libevent的下载和安装"><a href="#libevent的下载和安装" class="headerlink" title="libevent的下载和安装:"></a>libevent的下载和安装:</h2><p>源码安装: 可以参考readme。</p>
-<p>或者：./configure 检查安装环境生成makefile。</p>
-<p>再make      生成.o和可执行文件。</p>
-<p>sudo make install 将必要的资源cp 到系统指定的目录。</p>
-<p>进入sample目录，运行一些自带的demo。</p>
-<p>（注意编译库的.c使用必须加-levent选项。)</p>
-<p>库名libevent.so–&gt;/user/local/lib中可查看到。</p>
-<h2 id="这种通信的特性是基于事件的异步通信模型。"><a href="#这种通信的特性是基于事件的异步通信模型。" class="headerlink" title="这种通信的特性是基于事件的异步通信模型。"></a>这种通信的特性是基于事件的异步通信模型。</h2><p>这里可能会遇到一个问题:</p>
-<p>错误：没有这个文件或者目录</p>
-<p>解决办法:</p>
-<p>1.将用户用到的库统一放到一个目录下</p>
-<p>2.向配置文件中，写入库文件所在的目录</p>
-<p>3.更新/etc/ld.so.cache文件</p>
-<p>然后我们就可以和连上的客户端通信了。</p>
+                <h1 id="Win32线程"><a href="#Win32线程" class="headerlink" title="Win32线程"></a>Win32线程</h1><h2 id="线程的创建函数："><a href="#线程的创建函数：" class="headerlink" title="线程的创建函数："></a>线程的创建函数：</h2><pre class=" language-c++"><code class="language-c++">HANDLE CreateThread(
+    LPSECURITY_ATTRIBUTES lpThreadAttributes,//线程结构体地址  用来继承
+    SIZE_T dwStackSize,                         //线程堆栈大小
+    LPTHREAD_START_ROUTINE lpStartAddress,   //线程起始地址  线程 函数名 
+    LPVOID lpParameter,                         //线程函数的参数
+    DWORD dwCreationFlags,                     //创建方式    
+    LPDWORD lpThreadId);                     //线程id
+</code></pre>
+<p>这个线程函数返回的是一个句柄 函数名字更好理解了就是一个创建线程，第1，2个参数通常是NULL（默认值），第三个参数是一个函数名，如果函数不是DWORD WINAPI func(LPVOID lpThreadParameter);这种格式切记函数名要进行强转（LPTHREAD_START_ROUTINE），第三个就是函数的参数了也要强转（LPVOID），这个你得看情况而定，后面俩个也可以传NULL，但是你想要线程id的话可以自己创建，但是句柄和线程的ID可以互相转换。</p>
+<p>线程的代码：线程函数<br>线程函数的参数：   有且只有一个   void* 类型线程句柄 ，线程id可以对线程进行操作的东西。</p>
+<p> cpu时间分片：硬件层次是分开的    应用层  多个线程 并发执行！，在以前单核的时候并没有并行，只有并发，也是假并行。<br> 进程：一个运行中的程序！，计算机对数据操作的过程。</p>
+<p>进程和线程：<br>进程是系统资源调度的单位，进程有独立的系统资源，而线程没有公用的资源。<br>线程是系统调度单位一个进程内有一个或多个线程同一个进程的线程共享进程的所有资源。</p>
+<h2 id="线程的结束："><a href="#线程的结束：" class="headerlink" title="线程的结束："></a>线程的结束：</h2><pre><code>1. ### 自然结束   线程函数返回；这个不用怎么想的知道怎么没的。
 
+### 2.还可以被干掉了。
+
+### 2.1 主线程结束了 分支线程也就结束了。
+
+### 2.2 被其他线程主动干掉。
+
+###     TerminateThread ： TerminateThread强烈不建议使用，这个可能会导致内存泄漏。
+
+```c++
+BOOL WINAPI TerminateThread(
+  _Inout_  HANDLE hThread,//句柄
+  _In_     DWORD dwExitCode//线程退出值
+);
+```
+
+这个函数想当简单我不在说啥了。
+
+## 2.3 自己干掉自己
+
+###     ExitThread
+
+```c++
+VOID ExitThread（DWORD dwExitCode）//调用线程的退出代码。使用 GetExitCodeThread 函数检索线程的退出代码。
+```
+
+
+
+1. ### 已知线程id，获取线程句柄 OpenThread
+
+```
+ HANDLE OpenThread(  [in] DWORD dwDesiredAccess, 
+ [in] BOOL  bInheritHandle, 
+ [in] DWORD dwThreadId ); 
+```
+
+## 参数
+
+```c++
+[in] dwDesiredAccess
+```
+
+对线程对象的访问。根据线程的安全描述符检查此访问权限。此参数可以是一个或多个[线程访问权限](https://docs.microsoft.com/en-us/windows/desktop/ProcThread/thread-security-and-access-rights)。
+
+如果调用方启用了 SeDebugPrivilege 特权，则无论安全描述符的内容如何，都将授予所请求的访问权限。
+
+```c++
+[in] bInheritHandle
+```
+
+如果此值为 TRUE，则此进程创建的进程将继承句柄。否则，进程不会继承此句柄。
+
+```c++
+[in] dwThreadId
+```
+
+要打开的线程的标识符。
+
+该传NULL的不用多说了吧
+
+
+
+1. ### 获取当前线程id GetCurrentThreadId    
+
+```c++
+    DWORD GetCurrentThreadId();
+```
+
+
+
+
+
+1. ### 获取线程函数的返回值 GetExitCodeThread
+
+```c++
+BOOL GetExitCodeThread(
+  [in]  HANDLE  hThread,//句柄
+  [out] LPDWORD lpExitCode//指向变量的指针，用于接收线程终止状态
+);
+```
+
+
+
+
+
+## 等待线程结束   阻塞式等待
+
+### WaitForSingleObject            等一个
+
+```c++
+DWORD WaitForSingleObject(
+  [in] HANDLE hHandle,//句柄
+  [in] DWORD  dwMilliseconds
+);
+```
+
+第二个参数： 超时间隔，以毫秒为单位。如果指定了非零值，则该函数将一直等待，直到向对象发出信号或间隔过去。如果 *dw毫秒*为零，则在对象未发出信号时，函数不会进入等待状态;它总是立即返回。如果 *dw毫秒*为 **INFINITE**，则函数仅在向对象发出信号时返回。 
+
+### WaitForMultipleObjects      等多个  
+</code></pre>
+<p>​       </p>
+<pre class=" language-c++"><code class="language-c++">DWORD WaitForMultipleObjects(
+  [in] DWORD        nCount,//回收的个数
+  [in] const HANDLE *lpHandles，//对象句柄数组
+  [in] BOOL         bWaitAll,//如果此参数为 TRUE，则当 lpHandles 数组中所有对象的状态发出信号时，该函数将返回。如果为 FALSE，则当任何一个对象的状态设置为已发出信号时，该函数将返回。在后一种情况下，返回值指示其状态导致函数返回的对象。
+  [in] DWORD        dwMilliseconds//这个和回收一个是一样的
+);
+</code></pre>
+<p>​            </p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
                 
             </div>
             <hr/>
@@ -524,7 +628,7 @@ libevent的下载和安装:源码安装: 可以参考re">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/2022/03/12/libevent-di-yi-zhang/">https://github.com/2022/03/12/libevent-di-yi-zhang/</a>
+                    <a href="https://github.com/2022/03/22/win32-de-xian-cheng/">https://github.com/2022/03/22/win32-de-xian-cheng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -733,58 +837,18 @@ libevent的下载和安装:源码安装: 可以参考re">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/03/12/mysql-di-si-zhang/">
+                <a href="/2022/03/22/win32-de-xian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="MySQL第四章">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="win32的线程">
                         
-                        <span class="card-title">MySQL第四章</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/mysql/" class="post-category">
-                                    mysql
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/11/mysql-di-san-pian/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="MySQL第三篇">
-                        
-                        <span class="card-title">MySQL第三篇</span>
+                        <span class="card-title">win32的线程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -795,14 +859,56 @@ libevent的下载和安装:源码安装: 可以参考re">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/mysql/" class="post-category">
-                                    mysql
+                            <a href="/categories/libevent/" class="post-category">
+                                    libevent
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/19/linux-dong-tai-ku-zhao-bu-dao-de-jie-jue-fang-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Linux动态库找不到的解决方法">
+                        
+                        <span class="card-title">Linux动态库找不到的解决方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/c/" class="post-category">
+                                    c++
                                 </a>
                             
                             

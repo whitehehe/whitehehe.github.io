@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>win32的线程</title>
+      <link href="/2022/03/22/win32-de-xian-cheng/"/>
+      <url>/2022/03/22/win32-de-xian-cheng/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Win32线程"><a href="#Win32线程" class="headerlink" title="Win32线程"></a>Win32线程</h1><h2 id="线程的创建函数："><a href="#线程的创建函数：" class="headerlink" title="线程的创建函数："></a>线程的创建函数：</h2><pre class=" language-c++"><code class="language-c++">HANDLE CreateThread(    LPSECURITY_ATTRIBUTES lpThreadAttributes,//线程结构体地址  用来继承    SIZE_T dwStackSize,                         //线程堆栈大小    LPTHREAD_START_ROUTINE lpStartAddress,   //线程起始地址  线程 函数名     LPVOID lpParameter,                         //线程函数的参数    DWORD dwCreationFlags,                     //创建方式        LPDWORD lpThreadId);                     //线程id</code></pre><p>这个线程函数返回的是一个句柄 函数名字更好理解了就是一个创建线程，第1，2个参数通常是NULL（默认值），第三个参数是一个函数名，如果函数不是DWORD WINAPI func(LPVOID lpThreadParameter);这种格式切记函数名要进行强转（LPTHREAD_START_ROUTINE），第三个就是函数的参数了也要强转（LPVOID），这个你得看情况而定，后面俩个也可以传NULL，但是你想要线程id的话可以自己创建，但是句柄和线程的ID可以互相转换。</p><p>线程的代码：线程函数<br>线程函数的参数：   有且只有一个   void* 类型线程句柄 ，线程id可以对线程进行操作的东西。</p><p> cpu时间分片：硬件层次是分开的    应用层  多个线程 并发执行！，在以前单核的时候并没有并行，只有并发，也是假并行。<br> 进程：一个运行中的程序！，计算机对数据操作的过程。</p><p>进程和线程：<br>进程是系统资源调度的单位，进程有独立的系统资源，而线程没有公用的资源。<br>线程是系统调度单位一个进程内有一个或多个线程同一个进程的线程共享进程的所有资源。</p><h2 id="线程的结束："><a href="#线程的结束：" class="headerlink" title="线程的结束："></a>线程的结束：</h2><pre><code>1. ### 自然结束   线程函数返回；这个不用怎么想的知道怎么没的。### 2.还可以被干掉了。### 2.1 主线程结束了 分支线程也就结束了。### 2.2 被其他线程主动干掉。###     TerminateThread ： TerminateThread强烈不建议使用，这个可能会导致内存泄漏。```c++BOOL WINAPI TerminateThread(  _Inout_  HANDLE hThread,//句柄  _In_     DWORD dwExitCode//线程退出值);```这个函数想当简单我不在说啥了。## 2.3 自己干掉自己###     ExitThread```c++VOID ExitThread（DWORD dwExitCode）//调用线程的退出代码。使用 GetExitCodeThread 函数检索线程的退出代码。```1. ### 已知线程id，获取线程句柄 OpenThread``` HANDLE OpenThread(  [in] DWORD dwDesiredAccess,  [in] BOOL  bInheritHandle,  [in] DWORD dwThreadId ); ```## 参数```c++[in] dwDesiredAccess```对线程对象的访问。根据线程的安全描述符检查此访问权限。此参数可以是一个或多个[线程访问权限](https://docs.microsoft.com/en-us/windows/desktop/ProcThread/thread-security-and-access-rights)。如果调用方启用了 SeDebugPrivilege 特权，则无论安全描述符的内容如何，都将授予所请求的访问权限。```c++[in] bInheritHandle```如果此值为 TRUE，则此进程创建的进程将继承句柄。否则，进程不会继承此句柄。```c++[in] dwThreadId```要打开的线程的标识符。该传NULL的不用多说了吧1. ### 获取当前线程id GetCurrentThreadId    ```c++    DWORD GetCurrentThreadId();```1. ### 获取线程函数的返回值 GetExitCodeThread```c++BOOL GetExitCodeThread(  [in]  HANDLE  hThread,//句柄  [out] LPDWORD lpExitCode//指向变量的指针，用于接收线程终止状态);```## 等待线程结束   阻塞式等待### WaitForSingleObject            等一个```c++DWORD WaitForSingleObject(  [in] HANDLE hHandle,//句柄  [in] DWORD  dwMilliseconds);```第二个参数： 超时间隔，以毫秒为单位。如果指定了非零值，则该函数将一直等待，直到向对象发出信号或间隔过去。如果 *dw毫秒*为零，则在对象未发出信号时，函数不会进入等待状态;它总是立即返回。如果 *dw毫秒*为 **INFINITE**，则函数仅在向对象发出信号时返回。 ### WaitForMultipleObjects      等多个  </code></pre><p>​       </p><pre class=" language-c++"><code class="language-c++">DWORD WaitForMultipleObjects(  [in] DWORD        nCount,//回收的个数  [in] const HANDLE *lpHandles，//对象句柄数组  [in] BOOL         bWaitAll,//如果此参数为 TRUE，则当 lpHandles 数组中所有对象的状态发出信号时，该函数将返回。如果为 FALSE，则当任何一个对象的状态设置为已发出信号时，该函数将返回。在后一种情况下，返回值指示其状态导致函数返回的对象。  [in] DWORD        dwMilliseconds//这个和回收一个是一样的);</code></pre><p>​            </p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> libevent </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux动态库找不到的解决方法</title>
       <link href="/2022/03/19/linux-dong-tai-ku-zhao-bu-dao-de-jie-jue-fang-fa/"/>
       <url>/2022/03/19/linux-dong-tai-ku-zhao-bu-dao-de-jie-jue-fang-fa/</url>
