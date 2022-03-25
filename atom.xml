@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-22T16:21:59.223Z</updated>
+  <updated>2022-03-25T16:11:30.826Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qt的信号与槽</title>
+    <link href="https://github.com/2022/03/25/qt-de-xin-hao-yu-cao/"/>
+    <id>https://github.com/2022/03/25/qt-de-xin-hao-yu-cao/</id>
+    <published>2022-03-25T15:35:41.000Z</published>
+    <updated>2022-03-25T16:11:30.826Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信号与槽：&quot;&gt;&lt;a href=&quot;#信号与槽：&quot; class=&quot;headerlink&quot; title=&quot;信号与槽：&quot;&gt;&lt;/a&gt;信号与槽：&lt;/h1&gt;&lt;p&gt;信号槽是 Qt</summary>
+        
+      
+    
+    
+    
+    <category term="QT" scheme="https://github.com/categories/QT/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>win32的线程</title>

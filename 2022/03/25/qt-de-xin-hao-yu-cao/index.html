@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="win32的线程, hehe.blog">
-    <meta name="description" content="Win32线程线程的创建函数：HANDLE CreateThread(
-    LPSECURITY_ATTRIBUTES lpThreadAttributes,//线程结构体地址  用来继承
-    SIZE_T dwStackSize,">
+    <meta name="keywords" content="Qt的信号与槽, hehe.blog">
+    <meta name="description" content="信号与槽：信号槽是 Qt 框架引以为豪的机制之一。所谓信号槽，实际就是观察者模式(发布-订阅模式)。当某个事件发生之后，比如，按钮检测到自己被点击了一下，它就会发出一个信号（signal）。这种发出是没有目的的，类似广播。如果有对象对这个信">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>win32的线程 | hehe.blog</title>
+    <title>Qt的信号与槽 | hehe.blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -314,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">win32的线程</h1>
+                    <h1 class="description center-align post-title">Qt的信号与槽</h1>
                 </div>
             </div>
         </div>
@@ -446,8 +444,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/libevent/" class="post-category">
-                                libevent
+                            <a href="/categories/QT/" class="post-category">
+                                QT
                             </a>
                         
                     </div>
@@ -459,7 +457,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-22
+                    2022-03-25
                 </div>
                 
 
@@ -480,129 +478,141 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Win32线程"><a href="#Win32线程" class="headerlink" title="Win32线程"></a>Win32线程</h1><h2 id="线程的创建函数："><a href="#线程的创建函数：" class="headerlink" title="线程的创建函数："></a>线程的创建函数：</h2><pre class=" language-c++"><code class="language-c++">HANDLE CreateThread(
-    LPSECURITY_ATTRIBUTES lpThreadAttributes,//线程结构体地址  用来继承
-    SIZE_T dwStackSize,                         //线程堆栈大小
-    LPTHREAD_START_ROUTINE lpStartAddress,   //线程起始地址  线程 函数名 
-    LPVOID lpParameter,                         //线程函数的参数
-    DWORD dwCreationFlags,                     //创建方式    
-    LPDWORD lpThreadId);                     //线程id
+                <h1 id="信号与槽："><a href="#信号与槽：" class="headerlink" title="信号与槽："></a>信号与槽：</h1><p>信号槽是 Qt 框架引以为豪的机制之一。所谓信号槽，实际就是观察者模式(发布-订阅模式)。当某个<code>事件</code>发生之后，比如，按钮检测到自己被点击了一下，它就会发出一个信号（signal）。这种发出是没有目的的，类似广播。如果有对象对这个信号感兴趣，它就会使用连接（connect）函数，意思是，将想要处理的信号和自己的一个函数（称为槽（slot））绑定来处理这个信号。也就是说，当信号发出时，被连接的槽函数会自动被回调。这就类似观察者模式：当发生了感兴趣的事件，某一个操作就会被自动触发。</p>
+<h2 id="那信号的本质是啥呢？"><a href="#那信号的本质是啥呢？" class="headerlink" title="那信号的本质是啥呢？"></a>那信号的本质是啥呢？</h2><p>信号是由用户的操作而产生的特定的事件，QT会发出某个信号，从而产生一系列的反应。</p>
+<p>所以信号的本质是事件，当我们点击或者刷新等都会产生一个信号。</p>
+<h2 id="那信号是什么形式给反应的对象的呢？"><a href="#那信号是什么形式给反应的对象的呢？" class="headerlink" title="那信号是什么形式给反应的对象的呢？"></a>那信号是什么形式给反应的对象的呢？</h2><p>我们对窗口进行操作，窗口的事件触发，发出一个特定的信号，信号的表现方式是函数，也就是我们触发信号就会调用特定的函数，通知反应的对象。</p>
+<h2 id="那槽的本质是啥呢？"><a href="#那槽的本质是啥呢？" class="headerlink" title="那槽的本质是啥呢？"></a>那槽的本质是啥呢？</h2><p>槽就是对信号的一个处理函数。槽就是一个函数，可以有多种形式的函数：有普通函数还有类的成员函数，还可以有参数，可以被重载，最主要的是它可以是lambda表达式，但是它可以信号触发的时候被自动调用。</p>
+<h2 id="那信号和槽怎么连接在一起的呢？"><a href="#那信号和槽怎么连接在一起的呢？" class="headerlink" title="那信号和槽怎么连接在一起的呢？"></a>那信号和槽怎么连接在一起的呢？</h2><p>Qt中的信号与槽函数本来是俩个不相干的东西，但是我们可以通过一个QObject::connect()函数实现连接。</p>
+<pre class=" language-c++"><code class="language-c++">[static] QMetaObject::Connection  QObject::connect(
+    const QObject *sender,                                 
+    const char *signal,                                 
+    const QObject *receiver,                             
+    const char *method,                                 
+    Qt::ConnectionType type = Qt::AutoConnection
 </code></pre>
-<p>这个线程函数返回的是一个句柄 函数名字更好理解了就是一个创建线程，第1，2个参数通常是NULL（默认值），第三个参数是一个函数名，如果函数不是DWORD WINAPI func(LPVOID lpThreadParameter);这种格式切记函数名要进行强转（LPTHREAD_START_ROUTINE），第三个就是函数的参数了也要强转（LPVOID），这个你得看情况而定，后面俩个也可以传NULL，但是你想要线程id的话可以自己创建，但是句柄和线程的ID可以互相转换。</p>
-<p>线程的代码：线程函数<br>线程函数的参数：   有且只有一个   void* 类型线程句柄 ，线程id可以对线程进行操作的东西。</p>
-<p> cpu时间分片：硬件层次是分开的    应用层  多个线程 并发执行！，在以前单核的时候并没有并行，只有并发，也是假并行。<br> 进程：一个运行中的程序！，计算机对数据操作的过程。</p>
-<p>进程和线程：<br>进程是系统资源调度的单位，进程有独立的系统资源，而线程没有公用的资源。<br>线程是系统调度单位一个进程内有一个或多个线程同一个进程的线程共享进程的所有资源。</p>
-<h2 id="线程的结束："><a href="#线程的结束：" class="headerlink" title="线程的结束："></a>线程的结束：</h2><pre><code>1. ### 自然结束   线程函数返回；这个不用怎么想的知道怎么没的。
+<p><strong>参数:</strong></p>
+<ul>
+<li><p><strong>sender</strong>: 发出信号的对象</p>
+</li>
+<li><p><strong>signal</strong>: sender对象的信号，信号是一个函数</p>
+</li>
+<li><p><strong>receiver</strong>: 信号接收者</p>
+</li>
+<li><p><strong>method</strong>: receiver对象的槽函数, 当检测到sender发出了signal信号, receiver对象调用method方法</p>
+<p>​     connect函数相对于做了信号处理动作的注册,调用conenct连接信号与槽时，sender对象的信号并没有产生, 因此receiver对象的method也不会被调用,method槽函数本质是一个回调函数, 调用的时机是信号产生之后。 调用槽函数是Qt框架来执行的,connect中的sender和recever两个指针必须被实例化了, 否则conenct不会成功`</p>
+</li>
+</ul>
+<h1 id="Qt中有标准的信号与槽："><a href="#Qt中有标准的信号与槽：" class="headerlink" title="Qt中有标准的信号与槽："></a>Qt中有标准的信号与槽：</h1><p>系统自带的信号和槽通常如何查找呢，这个就需要利用帮助文档了，在帮助文档中比如我们上面的按钮的点击信号，在帮助文档中输入QPushButton，首先我们可以在<code>Contents</code>中寻找关键字 <code>signals</code>，信号的意思，但是我们发现并没有找到，这时候我们应该看当前类从父类继承下来了哪些信号，因此我们去他的父类QAbstractButton中就可以找到该关键字，点击signals索引到系统自带的信号有如下几个</p>
+<p><img src="E:\blog\source_posts\Qt的信号与槽\1648224064753.png" alt="1648224064753"></p>
+<blockquote>
+<p>功能实现： 点击窗口上的按钮, 关闭窗口</p>
+<ul>
+<li>按钮: 信号发出者 -&gt; <code>QPushButton</code></li>
+<li>窗口: 信号的接收者和处理者 -&gt; <code>QWidget</code></li>
+</ul>
+</blockquote>
+<pre class=" language-c++"><code class="language-c++">// 单击按钮发出的信号
+[signal] void QAbstractButton::clicked(bool checked = false)
+// 关闭窗口的槽函数
+[slot] bool QWidget::close();
 
-### 2.还可以被干掉了。
-
-### 2.1 主线程结束了 分支线程也就结束了。
-
-### 2.2 被其他线程主动干掉。
-
-###     TerminateThread ： TerminateThread强烈不建议使用，这个可能会导致内存泄漏。
-
-```c++
-BOOL WINAPI TerminateThread(
-  _Inout_  HANDLE hThread,//句柄
-  _In_     DWORD dwExitCode//线程退出值
-);
-```
-
-这个函数想当简单我不在说啥了。
-
-## 2.3 自己干掉自己
-
-###     ExitThread
-
-```c++
-VOID ExitThread（DWORD dwExitCode）//调用线程的退出代码。使用 GetExitCodeThread 函数检索线程的退出代码。
-```
-
-
-
-1. ### 已知线程id，获取线程句柄 OpenThread
-
-```
- HANDLE OpenThread(  [in] DWORD dwDesiredAccess, 
- [in] BOOL  bInheritHandle, 
- [in] DWORD dwThreadId ); 
-```
-
-## 参数
-
-```c++
-[in] dwDesiredAccess
-```
-
-对线程对象的访问。根据线程的安全描述符检查此访问权限。此参数可以是一个或多个[线程访问权限](https://docs.microsoft.com/en-us/windows/desktop/ProcThread/thread-security-and-access-rights)。
-
-如果调用方启用了 SeDebugPrivilege 特权，则无论安全描述符的内容如何，都将授予所请求的访问权限。
-
-```c++
-[in] bInheritHandle
-```
-
-如果此值为 TRUE，则此进程创建的进程将继承句柄。否则，进程不会继承此句柄。
-
-```c++
-[in] dwThreadId
-```
-
-要打开的线程的标识符。
-
-该传NULL的不用多说了吧
-
-
-
-1. ### 获取当前线程id GetCurrentThreadId    
-
-```c++
-    DWORD GetCurrentThreadId();
-```
-
-
-
-
-
-1. ### 获取线程函数的返回值 GetExitCodeThread
-
-```c++
-BOOL GetExitCodeThread(
-  [in]  HANDLE  hThread,//句柄
-  [out] LPDWORD lpExitCode//指向变量的指针，用于接收线程终止状态
-);
-```
-
-
-
-
-
-## 等待线程结束   阻塞式等待
-
-### WaitForSingleObject            等一个
-
-```c++
-DWORD WaitForSingleObject(
-  [in] HANDLE hHandle,//句柄
-  [in] DWORD  dwMilliseconds
-);
-```
-
-第二个参数： 超时间隔，以毫秒为单位。如果指定了非零值，则该函数将一直等待，直到向对象发出信号或间隔过去。如果 *dw毫秒*为零，则在对象未发出信号时，函数不会进入等待状态;它总是立即返回。如果 *dw毫秒*为 **INFINITE**，则函数仅在向对象发出信号时返回。 
-
-### WaitForMultipleObjects      等多个  
+// 单击按钮关闭窗口
+connect(ui->closewindow, &QPushButton::clicked, this, &MainWindow::close);
 </code></pre>
-<p>​       </p>
-<pre class=" language-c++"><code class="language-c++">DWORD WaitForMultipleObjects(
-  [in] DWORD        nCount,//回收的个数
-  [in] const HANDLE *lpHandles，//对象句柄数组
-  [in] BOOL         bWaitAll,//如果此参数为 TRUE，则当 lpHandles 数组中所有对象的状态发出信号时，该函数将返回。如果为 FALSE，则当任何一个对象的状态设置为已发出信号时，该函数将返回。在后一种情况下，返回值指示其状态导致函数返回的对象。
-  [in] DWORD        dwMilliseconds//这个和回收一个是一样的
-);
+<h1 id="3-自定义信号槽使用"><a href="#3-自定义信号槽使用" class="headerlink" title="3. 自定义信号槽使用"></a>3. 自定义信号槽使用</h1><blockquote>
+<p>Qt框架提供的信号槽在某些特定场景下是无法满足我们的项目需求的，因此我们还设计自己需要的的信号和槽，同样还是使用connect()对自定义的信号槽进行连接。</p>
+</blockquote>
+<p>如果想要使用自定义的信号和槽, 首先要编写新的类并且让其继承Qt的某些标准类,我们自己编写的类想要在Qt中使用使用信号槽机制, 那么必须要满足的如下条件: </p>
+<ul>
+<li>这个类必须从QObject类或者是其子类进行派生</li>
+<li>在定义类的第一行头文件中加入 Q_OBJECT 宏</li>
+</ul>
+<pre class=" language-c++"><code class="language-c++">// 在头文件派生类的时候，首先像下面那样引入Q_OBJECT宏：
+class MyMainWindow : public QWidget
+{
+    Q_OBJECT
+public:
+    ......
+}
 </code></pre>
-<p>​            </p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+<h2 id="3-1-自定义信号"><a href="#3-1-自定义信号" class="headerlink" title="3.1 自定义信号"></a>3.1 自定义信号</h2><ul>
+<li><p>信号是类的成员函数</p>
+</li>
+<li><p>返回值是 void 类型</p>
+</li>
+<li><p>参数可以随意指定, 信号也支持重载</p>
+</li>
+<li><p>信号需要使用 signals 关键字进行声明, 使用方法类似于public等关键字</p>
+</li>
+<li><p>信号函数只需要声明, 不需要定义(没有函数体实现)</p>
+</li>
+<li><p>在程序中发送自定义信号: 发送信号的本质就是调用信号函数</p>
+<pre class=" language-cpp"><code class="language-cpp">emit <span class="token function">mysignals</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//发送信号</span>
+</code></pre>
+<p><span style="color:red;font-size:13px;">emit是一个空宏，没有特殊含义，仅用来表示这个语句是发射一个信号，不写当然可以。</span></p>
+</li>
+</ul>
+<pre class=" language-c++"><code class="language-c++">// 举例: 信号重载
+// Qt中的类想要使用信号槽机制必须要从QObject类派生(直接或间接派生都可以)
+class MyButton : public QPushButton
+{
+    Q_OBJECT
+signals:
+    void testsignal();
+    void testsignal(int a);
+};
+//qRegisterMetaType
+</code></pre>
+<p>信号参数的作用是数据传递, 谁调用信号函数谁就指定实参，实参最终会被传递给槽函数</p>
+<h2 id="3-2-自定义槽"><a href="#3-2-自定义槽" class="headerlink" title="3.2 自定义槽"></a>3.2 自定义槽</h2><blockquote>
+<p>槽函数就是信号的处理动作，自定义槽函数和自定义的普通函数写法是一样的。</p>
+</blockquote>
+<p><strong>特点：</strong></p>
+<ul>
+<li><p>返回值是 void 类型</p>
+</li>
+<li><p>槽函数也支持重载</p>
+<ul>
+<li>槽函数参数个数, 需要看连接的信号的参数个数</li>
+<li>槽函数的参数是用来接收信号发送的数据的, 信号的参数就是需要发送的数据</li>
+<li>举例:<ul>
+<li>信号函数: void testsig(int a, double b);</li>
+<li>槽函数:   void testslot(int a, double b);</li>
+</ul>
+</li>
+<li>总结:<ul>
+<li>槽函数的参数应该和对应的信号的参数个数, 类型一一对应</li>
+<li>信号的参数可以大于等于槽函数的参数个数，未被槽函数接受的数据会被忽略<ul>
+<li>信号函数: void testsig(int a, double b);</li>
+<li>槽函数:   void testslot(int a);</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>槽函数的类型:</strong></p>
+<ul>
+<li>成员函数<ul>
+<li>普通成员函数</li>
+<li>静态成员函数</li>
+</ul>
+</li>
+<li>全局函数</li>
+<li>lambda表达式(匿名函数)</li>
+</ul>
+<ol start="4">
+<li>槽函数可以使用关键字进行声明: slots (Qt5中slots可以省略不写)<ul>
+<li>public slots:</li>
+<li>private slots:</li>
+<li>protected slots:</li>
+</ul>
+</li>
+</ol>
+<p>还有信号与槽的拓展没写。</p>
+
                 
             </div>
             <hr/>
@@ -628,7 +638,7 @@ DWORD WaitForSingleObject(
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/2022/03/22/win32-de-xian-cheng/">https://github.com/2022/03/22/win32-de-xian-cheng/</a>
+                    <a href="https://github.com/2022/03/25/qt-de-xin-hao-yu-cao/">https://github.com/2022/03/25/qt-de-xin-hao-yu-cao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -837,9 +847,10 @@ DWORD WaitForSingleObject(
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/03/25/qt-de-xin-hao-yu-cao/">
                     <div class="card-image">
@@ -857,9 +868,9 @@ DWORD WaitForSingleObject(
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -872,6 +883,7 @@ DWORD WaitForSingleObject(
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -882,13 +894,13 @@ DWORD WaitForSingleObject(
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/19/linux-dong-tai-ku-zhao-bu-dao-de-jie-jue-fang-fa/">
+                <a href="/2022/03/22/win32-de-xian-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Linux动态库找不到的解决方法">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="win32的线程">
                         
-                        <span class="card-title">Linux动态库找不到的解决方法</span>
+                        <span class="card-title">win32的线程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -899,14 +911,14 @@ DWORD WaitForSingleObject(
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/c/" class="post-category">
-                                    c++
+                            <a href="/categories/libevent/" class="post-category">
+                                    libevent
                                 </a>
                             
                             
