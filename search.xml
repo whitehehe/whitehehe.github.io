@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>初学HTML</title>
+      <link href="/2022/03/30/chu-xue-html/"/>
+      <url>/2022/03/30/chu-xue-html/</url>
+      
+        <content type="html"><![CDATA[<h1 id="初学HTML"><a href="#初学HTML" class="headerlink" title="初学HTML"></a>初学HTML</h1><h2 id="什么是HTML："><a href="#什么是HTML：" class="headerlink" title="什么是HTML："></a>什么是HTML：</h2><ul><li>HTML 指的是超文本标记语言 (<strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)</li><li>HTML 不是一种编程语言，而是一种<em>标记语言</em> (markup language)</li><li>标记语言是一套<em>标记标签</em> (markup tag)</li><li>HTML 使用<em>标记标签</em>来描述网页</li></ul><h2 id="HTML-标签"><a href="#HTML-标签" class="headerlink" title="HTML 标签"></a>HTML 标签</h2><p>HTML 标记标签通常被称为 HTML 标签 (HTML tag)。</p><ul><li>HTML 标签是由<em>尖括号</em>包围的关键词，比如 </li><li>HTML 标签通常是<em>成对出现</em>的，比如  <b> &nbsp;&nbsp;</b></li><li>标签对中的第一个标签是<em>开始标签</em>，第二个标签是<em>结束标签</em></li><li>开始和结束标签也被称为<em>开放标签</em>和<em>闭合标签</em></li></ul><h2 id="HTML-文档-x3D-网页"><a href="#HTML-文档-x3D-网页" class="headerlink" title="HTML 文档 = 网页"></a>HTML 文档 = 网页</h2><ul><li>HTML 文档<em>描述网页</em></li><li>HTML 文档<em>包含 HTML 标签</em>和纯文本</li><li>HTML 文档也被称为<em>网页</em></li></ul><h2 id="Web-浏览器的作用是读取-HTML-文档，并以网页的形式显示出它们。浏览器不会显示-HTML-标签，而是使用标签来解释页面的内容："><a href="#Web-浏览器的作用是读取-HTML-文档，并以网页的形式显示出它们。浏览器不会显示-HTML-标签，而是使用标签来解释页面的内容：" class="headerlink" title="Web 浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们。浏览器不会显示 HTML 标签，而是使用标签来解释页面的内容："></a>Web 浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们。浏览器不会显示 HTML 标签，而是使用标签来解释页面的内容：</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>我的第一个标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>我的第一个段落。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span> 与 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span> 之间的文本描述网页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span> 与 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span> 之间的文本是可见的页面内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span> 与 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span> 之间的文本被显示为标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span> 与 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span> 之间的文本被显示为段落</code></pre><p><img src="E:\blog\source_posts\初学HTML\1648655659382.png" alt="1648655659382"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HTML </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Mysql第八章</title>
       <link href="/2022/03/29/mysql-di-ba-zhang/"/>
       <url>/2022/03/29/mysql-di-ba-zhang/</url>
