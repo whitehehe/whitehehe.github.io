@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>初学HTML②</title>
+      <link href="/2022/03/31/chu-xue-html/"/>
+      <url>/2022/03/31/chu-xue-html/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h1><h2 id="HTML-标题（Heading）是通过-标签来定义的："><a href="#HTML-标题（Heading）是通过-标签来定义的：" class="headerlink" title="HTML 标题（Heading）是通过 -  标签来定义的："></a>HTML 标题（Heading）是通过</h2><h1> - </h1><h6> 标签来定义的：</h6><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>这是一个标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>这是一个标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>这是一个标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span></code></pre><p><img src="E:\blog\source_posts\初学HTML②\1648742149651.png" alt="1648742149651"></p><h2 id="HTML段落："><a href="#HTML段落：" class="headerlink" title="HTML段落："></a>HTML段落：</h2><h2 id="HTML的段落是由标签来定义的："><a href="#HTML的段落是由标签来定义的：" class="headerlink" title="HTML的段落是由标签来定义的："></a>HTML的段落是由标签<p>来定义的：</p></h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>这是一个段落<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>这是另外一个段落<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre><h2 id="HTML链接："><a href="#HTML链接：" class="headerlink" title="HTML链接："></a>HTML链接：</h2><h2 id="HTML链接是由标签来定义的："><a href="#HTML链接是由标签来定义的：" class="headerlink" title="HTML链接是由标签来定义的："></a>HTML链接是由标签<a>来定义的：</a></h2><pre><a><code class="html">&lt;a href="https://www.runoob.com"&gt;这是一个链接&lt;/a&gt;</code></a></pre><a></a><h2 id="HTML图像："><a></a><a href="#HTML图像：" class="headerlink" title="HTML图像："></a>HTML图像：</h2><h2 id="HTML的图像是由标签来定义的"><a href="#HTML的图像是由标签来定义的" class="headerlink" title="HTML的图像是由标签来定义的"></a>HTML的图像是由标签<img>来定义的</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">scr</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/images/logo.png<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>258<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>39<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> HTML </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>初学HTML</title>
       <link href="/2022/03/30/chu-xue-html/"/>
       <url>/2022/03/30/chu-xue-html/</url>
