@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-03-31T16:06:46.646Z</updated>
+  <updated>2022-04-01T04:00:28.728Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML③</title>
+    <link href="https://github.com/2022/04/01/html/"/>
+    <id>https://github.com/2022/04/01/html/</id>
+    <published>2022-04-01T03:18:07.000Z</published>
+    <updated>2022-04-01T04:00:28.728Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;HTML元素：&quot;&gt;&lt;a href=&quot;#HTML元素：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="HTML" scheme="https://github.com/categories/HTML/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>初学HTML②</title>
@@ -449,29 +472,6 @@
     
     
     <category term="QT" scheme="https://github.com/categories/QT/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>简单的象棋开发</title>
-    <link href="https://github.com/2022/03/09/jian-dan-de-xiang-qi-kai-fa/"/>
-    <id>https://github.com/2022/03/09/jian-dan-de-xiang-qi-kai-fa/</id>
-    <published>2022-03-09T09:59:15.000Z</published>
-    <updated>2022-03-09T11:54:52.238Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;简单的象棋开发&quot;&gt;&lt;a href=&quot;#简单的象棋开发&quot; class=&quot;headerlink&quot; title=&quot;简单的象棋开发&quot;&gt;&lt;/a&gt;简单的象棋开发&lt;/h1&gt;&lt;h6 id=&quot;我们需要准备的知识是c语言基础和easyx图形库&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="开发" scheme="https://github.com/categories/%E5%BC%80%E5%8F%91/"/>
     
     
   </entry>
