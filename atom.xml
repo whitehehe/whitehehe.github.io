@@ -6,7 +6,7 @@
   <link href="https://github.com/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2022-04-01T04:00:28.728Z</updated>
+  <updated>2022-04-02T08:25:46.527Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTML④</title>
+    <link href="https://github.com/2022/04/02/html/"/>
+    <id>https://github.com/2022/04/02/html/</id>
+    <published>2022-04-02T08:15:25.000Z</published>
+    <updated>2022-04-02T08:25:46.527Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;HTML属性：&quot;&gt;&lt;a href=&quot;#HTML属性：&quot; class=&quot;headerlink&quot; title=&quot;HTML属性：&quot;&gt;&lt;/a&gt;HTML属性：&lt;/h1&gt;&lt;p&gt;属性是 HTML 元素提供的附加信息。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;HTML-属性&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="HTML" scheme="https://github.com/categories/HTML/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>HTML③</title>
     <link href="https://github.com/2022/04/01/html/"/>
     <id>https://github.com/2022/04/01/html/</id>
     <published>2022-04-01T03:18:07.000Z</published>
-    <updated>2022-04-01T04:00:28.728Z</updated>
+    <updated>2022-04-01T04:17:02.652Z</updated>
     
     
       
@@ -449,29 +474,6 @@
     
     
     <category term="mysql" scheme="https://github.com/categories/mysql/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>qt的简史</title>
-    <link href="https://github.com/2022/03/10/qt-de-jian-shi/"/>
-    <id>https://github.com/2022/03/10/qt-de-jian-shi/</id>
-    <published>2022-03-10T08:09:51.000Z</published>
-    <updated>2022-03-10T09:30:37.619Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;1-QT&quot;&gt;&lt;a href=&quot;#1-QT&quot; class=&quot;headerlink&quot; title=&quot;1.QT&quot;&gt;&lt;/a&gt;1.QT&lt;/h1&gt;&lt;h2 id=&quot;1-什么是QT：&quot;&gt;&lt;a href=&quot;#1-什么是QT：&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="QT" scheme="https://github.com/categories/QT/"/>
     
     
   </entry>
