@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>初学lua语言</title>
+      <link href="/2022/05/06/chu-xue-lua-yu-yan/"/>
+      <url>/2022/05/06/chu-xue-lua-yu-yan/</url>
+      
+        <content type="html"><![CDATA[<h1 id="什么是Lua语言？"><a href="#什么是Lua语言？" class="headerlink" title="什么是Lua语言？"></a>什么是Lua语言？</h1><p>Lua 是一种轻量小巧的脚本语言，用标准C语言编写并以源代码形式开放， 其设计目的是为了嵌入应用程序中，从而为应用程序提供灵活的扩展和定制功能。</p><p>Lua 是巴西里约热内卢天主教大学（Pontifical Catholic University of Rio de Janeiro）里的一个研究小组于 1993 年开发的，该小组成员有：Roberto Ierusalimschy、Waldemar Celes 和 Luiz Henrique de Figueiredo。</p><h2 id="为啥会有Lua语言？"><a href="#为啥会有Lua语言？" class="headerlink" title="为啥会有Lua语言？"></a>为啥会有Lua语言？</h2><p> 其设计目的是为了嵌入应用程序中，从而为应用程序提供灵活的扩展和定制功能。 </p><p>举个简单的例子：比如说假如有个函数我们使用c的话，修改就需要重新编译，需要花费时间，而作为Lua，它就少了这么多繁琐。</p><h2 id="Lua语言的特性是咋样的？"><a href="#Lua语言的特性是咋样的？" class="headerlink" title="Lua语言的特性是咋样的？"></a>Lua语言的特性是咋样的？</h2><ul><li><strong>轻量级</strong>: 它用标准C语言编写并以源代码形式开放，编译后仅仅一百余K，可以很方便的嵌入别的程序里。</li><li><strong>可扩展</strong>: Lua提供了非常易于使用的扩展接口和机制：由宿主语言(通常是C或C++)提供这些功能，Lua可以使用它们，就像是本来就内置的功能一样。</li><li>其它特性<ul><li>支持面向过程(procedure-oriented)编程和函数式编程(functional programming)；</li><li>自动内存管理；只提供了一种通用类型的表（table），用它可以实现数组，哈希表，集合，对象；</li><li>语言内置模式匹配；闭包(closure)；函数也可以看做一个值；提供多线程（协同进程，并非操作系统所支持的线程）支持；</li><li>通过闭包和table可以很方便地支持面向对象编程所需要的一些关键机制，比如数据抽象，虚函数，继承和重载等。</li></ul></li></ul><h2 id="Lua-应用场景："><a href="#Lua-应用场景：" class="headerlink" title="Lua 应用场景："></a>Lua 应用场景：</h2><ul><li>游戏开发（魔兽争霸里面就使用了Lua）</li><li>独立应用脚本</li><li>Web 应用脚本</li><li>扩展和数据库插件如：MySQL Proxy 和 MySQL WorkBench</li><li>安全系统，如入侵检测系统</li></ul><h2 id="第一个-Lua-程序："><a href="#第一个-Lua-程序：" class="headerlink" title="第一个 Lua 程序："></a>第一个 Lua 程序：</h2><pre class=" language-lua"><code class="language-lua"><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"hello Lua"</span><span class="token punctuation">)</span></code></pre><p><img src="E:\blog\source_posts\初学lua语言\1651828931770.png" alt="1651828931770"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Lua </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>设计模式</title>
       <link href="/2022/04/15/she-ji-mo-shi/"/>
       <url>/2022/04/15/she-ji-mo-shi/</url>
